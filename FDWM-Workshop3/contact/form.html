@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Introduction to HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="nav-title">Introduction to HTML</span>
+    </header>
+    <nav>
+        <a href="../index.html">&#8592; Profile</a>
+    </nav>
+    <div class="wrapper">
+        <section>
+            <div id="recipe">
+                <article class="full-box">
+                    <form>
+                        <fieldset>
+                            <legend>Fill the form:</legend>
+                            <div class="form-details">
+                                <label for="fname">First name</label>
+                                <input id="fname" type="text" required name="fname"><br>
+                                <label for="lname">Last name</label>
+                                <input id="lname" type="text" required name="lname"><br>
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email"><br>
+                                <label for="password">Password</label>
+                                <input id="password" type="password" name="password"><br>
+                                <label for="url">Website</label>
+                                <input id="url" type="url" name="url"><br>
+                                <label for="age">Age</label>
+                                <input id="age" type="number" name="age" min="16" max="100"><br>
+                                <label for="tel">Irish mobile number</label>
+                                <input id="tel" type="tel" name="tel" pattern='08[3679]-\d{7}'><br>
+                                <label for="passport">Passport number</label>
+                                <input id="passport" type="text" name="passport" pattern='[a-z]{2}[0-9]{7}'><br>
+                                <label for="budget">Budget</label>
+                                <input id="budget" type="range" name="budget"><br>
+                                <label for="dob">Date of birth</label>
+                                <input id="dob" type="date" name="dob"><br>
+                                <label>Currency</label>
+                                <input list="currency" name="currency"><br>
+                                <datalist id="currency">
+                                    <option value="Euro">
+                                    <option value="Dollar">
+                                </datalist>
+                                <label for="browsers">Browsers</label>
+                                <select id="browsers">
+                                    <optgroup label="Mobile browsers">
+                                        <option value="chrome">Chrome</option>
+                                        <option value="opera">Opera</option>
+                                    </optgroup>
+                                    <optgroup label="Desktop broswers">
+                                        <option value="chrome">Chrome</option>
+                                        <option value="ie">Internet Explorer</option>
+                                    </optgroup>
+                                </select><br>
+                                <label>Tomatoes</label>
+                                <input type="checkbox" name="vegetables" value="tomato"><br>
+                                <label>Potatoes</label>
+                                <input type="checkbox" name="vegetables" value="potato"><br>
+                                <label>Celery</label>
+                                <input type="checkbox" name="vegetables" value="celery"><br>
+                                <label for="color">Color</label>
+                                <input id="color" type="color" name="color"><br>
+                            </div>
+                            <button class="submit-button" type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://digitalskillsacademy.com/">
+                © 2016 Digital Skills Academy
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
