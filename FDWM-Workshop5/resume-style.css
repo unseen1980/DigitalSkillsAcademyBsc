@@ -1,0 +1,44 @@
+h1 {
+    font-size: 30px;
+    font-family: Georgia;
+    color: red;
+}
+
+h2 {
+    font-size: 18px;
+    font: Arial;
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    font-family: san-serif;
+    color: gray;
+}
+
+footer>p {
+    text-align: center;
+    color: red;
+    font-family: Courier New, Courier, monospace
+}
+
+h1.portfolio {
+    font-size: 36px;
+    font-family: Georgia;
+    color: blue;
+}
+
+h2.portfolio {
+    font-size: 25px;
+    font: Courier;
+    color: blue;
+    font-weight: bold;
+}
+
+p.portfolio {
+    font-size: 16px;
+    font-family: san-serif;
+    color: black;
+    text-indent: 50px;
+}
