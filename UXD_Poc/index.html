@@ -5,23 +5,49 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <main class="page-wrap">
-        <header class="sea-blue-bg white padding5pc">
-            <h1>Ethical eats</h1>
-            <p>slogan here...</p>
+        <header class="sea-blue-bg white header">
+            <img src="images/logo.png" class="hide-on-small">
+            <div>
+                <h1>ETHICAL EATERS</h1>
+                <hr class="hr-header">
+                <h3>your food - planet - your choice</h3>
+            </div>
+            <nav>
+                <ul class="show-nav">
+                    <li><a href="#home">Personal Tracker</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Partners</a></li>
+                    <li><a href="#about">Shop</a></li>
+                    <li><a href="#about">Search</a></li>
+                </ul>
+                <div class="burger">&#9776;</div>
+            </nav>
+
         </header>
 
         <article>
-            <header class="queen-blue-bg white padding5pc">
+
+            <section class="max-green-bg max-green padding4pc css-img min-height-150 info">
+                <h1>The greatest threat to our planet is the belief that someone else will save it</h1>
+            </section>
+
+            <section class="limerick-bg white padding4pc min-height-300">
                 <div class="row">
-                    <div class="eight columns">
-                        <div class="white-bg queen-blue padding5pc">
+                    <div class="six columns">
+                        <h1>Personal tracker</h1>
+                        <h2>What did you eat today?</h2>
+                        <h3>The food we consume contributes to climate change. The production, packaging and transportation of food all consumes energy and results in carbon emissions which threaten to raise average global surface temperatures. However, not
+                            all foods are equal... The Personal tracker provides the opportunity to calculate the resultant carbon dioxide from the food you eat, called your "Food Carbon Footprint".</h3>
+                    </div>
+                    <div class="six columns">
+                        <div class="white-bg max-green padding4pc">
                             <form>
                                 <label>Meat</label>
                                 <select class="u-full-width" id="exampleRecipientInput">
@@ -34,29 +60,40 @@
                                     <option value="Option 1">Rice</option>
                                     <option value="Option 2">Pasta</option>
                                 </select>
+                                <label>Milk products</label>
+                                <select class="u-full-width" id="exampleRecipientInput">
+                                    <option value="Option 1">Yellow cheese</option>
+                                    <option value="Option 2">Milk 5%</option>
+                                </select>
+                                <label>Fish</label>
+                                <select class="u-full-width" id="exampleRecipientInput">
+                                    <option value="Option 1">Tuna</option>
+                                    <option value="Option 2">Swordfish</option>
+                                </select>
+                                <label>Fruits - Vegetables</label>
+                                <select class="u-full-width" id="exampleRecipientInput">
+                                    <option value="Option 1">Apple</option>
+                                    <option value="Option 2">Banana</option>
+                                </select>
                                 <input class="button-primary" type="submit" value="Submit">
                             </form>
                         </div>
                     </div>
-                    <div class="four columns">
-                        <h1>Try our calculator</h1>
-                        <h2>What did you eat today?</h2>
-                    </div>
                 </div>
 
-            </header>
+            </section>
 
-            <section class="white-bg queen-blue padding5pc">
+            <section class="pastel-gray-bg max-green padding4pc min-height-300">
                 <h3>What is food's carbon footprint</h3>
                 <p>Is greenhouse gas emissions produced by growing, rearing, farming, processing, transporting, storing, cooking and disposing of the food you eat</p>
             </section>
 
-            <section class="max-green-bg white padding5pc text-right">
+            <section class="eggshell-bg max-green padding4pc text-right min-height-300">
                 <h3>Giving up beef</h3>
                 <p>The heavy impact on the environment of meat production was known but the research shows a new scale and scope of damage, particularly for beef.</p>
             </section>
 
-            <footer class="limerick-bg white padding5pc">
+            <footer class="limerick-bg white padding4pc min-height-300">
                 <h4>The top 10 foods</h4>
                 <p>When you bite into a hamburger or slice into some salmon, do you think about the impact it had on the environment on its way to you?</p>
             </footer>
