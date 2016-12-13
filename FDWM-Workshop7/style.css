@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    font-family: 'Lato', serif;
+    background: #7fd7a0;
+}
+
+header {
+    background-image: url('header-image.jpg');
+    min-height: 200px;
+    padding-top: 100px;
+    text-align: center;
+    color: #a3f0e4;
+}
+
+.submit-button {
+    background: #fcc956;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 4px;
+    margin: 20px 0 0 0;
+    border-bottom: 2px solid #d68244;
+    text-shadow: 1px 1px 1px #8b5b00;
+}
+
+header button:hover {
+    background-color: #d9ac44;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+nav>ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+nav>ul>li:hover {
+    background: #65c597;
+}
+
+nav>ul>li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    min-height: 500px;
+    background: #65c597;
+    text-align: center;
+}
+
+section {
+    color: #fff;
+    width: 30%;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+footer {
+    min-height: 100px;
+    color: #a3f0e4;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.float-left-contact {
+    width: 40%;
+    float: left;
+}
