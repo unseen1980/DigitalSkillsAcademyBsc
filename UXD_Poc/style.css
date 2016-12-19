@@ -177,7 +177,7 @@ nav>ul>li a:hover {
     border-radius: 50%;
 }
 
-a:link {
+.link-green {
     color: #1a936f;
 }
 
@@ -280,6 +280,16 @@ a:link {
     }
 }
 
+.general-boxes {
+    padding: 1%;
+    text-align: center;
+    min-height: 220px;
+}
+
+.bottom-gap {
+    margin-bottom: 2%;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -287,7 +297,7 @@ html {
 body {
     font-size: 1.5em;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 100;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     color: #222;
 }
@@ -310,6 +320,7 @@ h4,
 h5,
 p {
     margin: 0;
+    font-weight: 100;
 }
 
 h1 {
@@ -491,4 +502,82 @@ hr {
     content: "";
     display: table;
     clear: both;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.video-container .description .inner {
+    font-size: 1em;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.video-container .link {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    text-align: center;
+    z-index: 1001;
+    font-size: 2em;
+    color: #fff;
+}
+
+.video-container .link a {
+    color: #fff;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
 }

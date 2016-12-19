@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -34,8 +36,20 @@
 
         <article>
 
-            <section class="max-green-bg max-green padding4pc css-img min-height-150 info">
-                <h1>The greatest threat to our planet is the belief that someone else will save it</h1>
+            <section class="homepage-hero-module">
+                <div class="video-container">
+                    <div class="title-container">
+                        <div class="headline eggshell">
+                            <h1>&#147;The greatest threat to our planet is the belief that someone else will save it.&#148;</h1>
+                            <h3>~Robert Swan</h3>
+                        </div>
+                    </div>
+                    <div class="filter"></div>
+                    <video autoplay loop class="fillWidth">
+                        <source src="videos/Green.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                        <source src="videos/Green.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    </video>
+                </div>
             </section>
 
             <section class="limerick-bg white padding4pc min-height-300">
@@ -85,18 +99,21 @@
 
             <section class="pastel-gray-bg max-green padding4pc min-height-300">
                 <div class="row">
+                    <h1>Explore our articles</h1>
+                </div>
+                <div class="row">
                     <div class="six columns">
                         <article class="homepage-article-boxes border5px">
                             <h2>Carbon Footprint Ranking of Food</h2>
                             <p>Changing the foods that you eat can have a big impact on your carbon footprint. And reduce pollution, preserve the environment and slow global warming. Many of these changes will also save you money, improve your health and
-                                even keep you fit! <a href="#">Read more...</a></p>
+                                even keep you fit! <a href="#" class="link-green">Read more...</a></p>
                         </article>
                     </div>
                     <div class="six columns">
                         <article class="homepage-article-boxes border5px">
                             <h2>Cooking smartly</h2>
                             <p>Did you know that a gas oven only uses 6% of its energy to cook? And an electric oven is not much better at 12%. If you use the oven on a warm day, you will also heat up the room and need to turn on a fan or air-conditioning.
-                                <a href="#">Read more...</a></p>
+                                <a href="#" class="link-green">Read more...</a></p>
                         </article>
                     </div>
                 </div>
@@ -105,21 +122,24 @@
                         <article class="homepage-article-boxes border5px">
                             <h2>Food’s Carbon Footprint: Eat Organic</h2>
                             <p>Organic farming methods for both crops and animals have a much lower impact on the environment than conventional methods. Organic-certified farms must use natural methods for soil fertilisation, weed prevention and pest control.
-                                <a href="#">Read more...</a></p>
+                                <a href="#" class="link-green">Read more...</a></p>
                         </article>
                     </div>
                     <div class="six columns">
                         <article class="homepage-article-boxes border5px">
                             <h2>Food’s Carbon Footprint: Save water</h2>
                             <p>Water is a precious resource that is becoming scarce in many countries such as Egypt, Mexico, Pakistan and Australia. And even if you do not live in one of these arid countries, you may be wearing or using goods and consuming
-                                foods produced in those places, thus contributing to their water debt. <a href="#">Read more...</a></p>
+                                foods produced in those places, thus contributing to their water debt. <a href="#" class="link-green">Read more...</a></p>
                         </article>
                     </div>
                 </div>
 
             </section>
 
-            <section class="eggshell-bg max-green padding4pc text-right min-height-300">
+            <section class="eggshell-bg max-green padding4pc min-height-300">
+                <div class="row">
+                    <h1>Talking about us</h1>
+                </div>
                 <div class="row">
                     <div class="three columns">
                         <article class="homepage-celebity-boxes border5px">
@@ -154,28 +174,31 @@
 
             <section class="limerick-bg white padding4pc">
                 <div class="row">
-                    <div class="three columns">
+                    <h1>Videos</h1>
+                </div>
+                <div class="row">
+                    <div class="three columns bottom-gap">
                         <div class="auto-resizable-iframe">
                             <div>
                                 <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/lkE0ySkQKHM"></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="three columns">
+                    <div class="three columns bottom-gap">
                         <div class="auto-resizable-iframe">
                             <div>
                                 <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/8q7_aV8eLUE"></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="three columns">
+                    <div class="three columns bottom-gap">
                         <div class="auto-resizable-iframe">
                             <div>
                                 <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/YseZXKfT_yY"></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="three columns">
+                    <div class="three columns bottom-gap">
                         <div class="auto-resizable-iframe">
                             <div>
                                 <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/bxWIlZ9EtC4"></iframe>
@@ -184,13 +207,83 @@
                     </div>
                 </div>
             </section>
+
+            <section class="pastel-gray-bg max-green padding4pc min-height-300">
+                <div class="row">
+                    <h1>Environmental friendly products</h1>
+                </div>
+                <div class="row">
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/bananas.jpg" alt="">
+                        <h3>Bananas 1kg Canary Islands 3.99$</h3>
+                    </div>
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/coffee.jpg" alt="">
+                        <h3>Coffee 0.5kg Lesotho 12.99$</h3>
+                    </div>
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/flour.jpg" alt="">
+                        <h3>Flour 2kf Armenia 2.99$</h3>
+                    </div>
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/mango.jpg" alt="">
+                        <h3>Mango 1piece Portugal 1.99$</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/pasta.jpg" alt="">
+                        <h3>Pasta 1kg Sicily 3.99$</h3>
+                    </div>
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/plates.jpg" alt="">
+                        <h3>Leaf plates x 20 Germany 10.99$</h3>
+                    </div>
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/shoes.jpg" alt="">
+                        <h3>Cannabis shoes France 39.99$</h3>
+                    </div>
+                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                        <img src="images/products/tofu.jpg" alt="">
+                        <h3>Tofu 1kg Bangalore 3.99$</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="eggshell-bg max-green padding4pc min-height-300">
+                <div class="row">
+                    <h1>Frequently asked questions</h1>
+                </div>
+                <div class="row">
+                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                        <h2>What is an ecological footprint?</h2>
+                    </div>
+                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                        <h2>How big is our ecological footprint?</h2>
+                    </div>
+                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                        <h2>What is a carbon footprint?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                        <h2>What does the footprint calculator do?</h2>
+                    </div>
+                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                        <h2>How does a footprint calculator work?</h2>
+                    </div>
+                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                        <h2>Is the calculator international?</h2>
+                    </div>
+                </div>
+            </section>
+
             <footer class="pastel-gray-bg max-green padding4pc min-height-300">
                 <h4>The top 10 foods</h4>
                 <p>When you bite into a hamburger or slice into some salmon, do you think about the impact it had on the environment on its way to you?</p>
             </footer>
 
         </article>
-        <!--<article class="push"></article>-->
     </main>
     <footer class="sea-blue-bg white text-right">
         <h3 class="padding1pc">Copyright Team4 DigitalSkillsAcademy</h3>
