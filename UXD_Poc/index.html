@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
@@ -23,11 +24,11 @@
             </div>
             <nav>
                 <ul class="show-nav">
-                    <li><a href="#home">Personal Tracker</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Partners</a></li>
-                    <li><a href="#about">Shop</a></li>
-                    <li><a href="#about">Search</a></li>
+                    <li><a href="#home">Personal Tracker <i class="fa fa-calculator limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="#news">News <i class="fa fa-newspaper-o limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="#contact">Partners <i class="fa fa-globe limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="#about">Shop <i class="fa fa-shopping-cart limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="#about">Search <i class="fa fa-search limerick" aria-hidden="true"></i></a></li>
                 </ul>
                 <div class="burger">&#9776;</div>
             </nav>
@@ -52,44 +53,44 @@
                 </div>
             </section>
 
-            <section class="limerick-bg white padding4pc min-height-300">
+            <section class="limerick-bg white padding2pc min-height-300">
                 <div class="row">
                     <div class="six columns">
-                        <h1>Personal tracker</h1>
-                        <h2>What did you eat today?</h2>
-                        <h3>The food we consume contributes to climate change. The production, packaging and transportation of food all consumes energy and results in carbon emissions which threaten to raise average global surface temperatures. However, not
+                        <h1 class="text-shadow-grey">Personal tracker <i class="fa fa-calculator" aria-hidden="true"></i></h1>
+                        <h2 class="text-shadow-grey padding1pc-bottom">What did you eat today?</h2>
+                        <h3 class="text-shadow-grey">The food we consume contributes to climate change. The production, packaging and transportation of food all consumes energy and results in carbon emissions which threaten to raise average global surface temperatures. However, not
                             all foods are equal... The Personal tracker provides the opportunity to calculate the resultant carbon dioxide from the food you eat, called your "Food Carbon Footprint".</h3>
                     </div>
                     <div class="six columns">
-                        <div class="white-bg max-green padding4pc border5px">
+                        <div class="white-bg max-green padding2pc border5px box-shadow">
                             <form>
                                 <label>Meat</label>
-                                <select class="u-full-width" id="exampleRecipientInput">
+                                <select class="u-full-width">
                                     <option value="Option 1">Beef</option>
                                     <option value="Option 2">Chicken</option>
                                     <option value="Option 3">Pork</option>
                                 </select>
                                 <label>Carbs</label>
-                                <select class="u-full-width" id="exampleRecipientInput">
+                                <select class="u-full-width">
                                     <option value="Option 1">Rice</option>
                                     <option value="Option 2">Pasta</option>
                                 </select>
                                 <label>Milk products</label>
-                                <select class="u-full-width" id="exampleRecipientInput">
+                                <select class="u-full-width">
                                     <option value="Option 1">Yellow cheese</option>
                                     <option value="Option 2">Milk 5%</option>
                                 </select>
                                 <label>Fish</label>
-                                <select class="u-full-width" id="exampleRecipientInput">
+                                <select class="u-full-width">
                                     <option value="Option 1">Tuna</option>
                                     <option value="Option 2">Swordfish</option>
                                 </select>
                                 <label>Fruits - Vegetables</label>
-                                <select class="u-full-width" id="exampleRecipientInput">
+                                <select class="u-full-width">
                                     <option value="Option 1">Apple</option>
                                     <option value="Option 2">Banana</option>
                                 </select>
-                                <input class="button-primary" type="submit" value="Submit">
+                                <button class="button-primary" type="submit">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
                             </form>
                         </div>
                     </div>
@@ -97,48 +98,77 @@
 
             </section>
 
-            <section class="pastel-gray-bg max-green padding4pc min-height-300">
-                <div class="row">
-                    <h1>Explore our articles</h1>
+            <section class="pastel-gray-bg max-green padding2pc min-height-300">
+                <div class="row padding1pc-bottom">
+                    <h1>Explore our articles <i class="fa fa-rss" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
                     <div class="six columns">
-                        <article class="homepage-article-boxes border5px">
-                            <h2>Carbon Footprint Ranking of Food</h2>
-                            <p>Changing the foods that you eat can have a big impact on your carbon footprint. And reduce pollution, preserve the environment and slow global warming. Many of these changes will also save you money, improve your health and
-                                even keep you fit! <a href="#" class="link-green">Read more...</a></p>
+                        <article class="homepage-article-boxes border5px box-shadow">
+                            <div class="row">
+                                <div class="two columns center">
+                                    <img class="image-responsive" src="images/icons/128/leaf.png" alt="">
+                                </div>
+                                <div class="ten columns">
+                                    <h2>Carbon Footprint Ranking of Food</h2>
+                                    <p>Changing the foods that you eat can have a big impact on your carbon footprint. And reduce pollution, preserve the environment and slow global warming. Many of these changes will also save you money, improve your health
+                                        and even keep you fit! <a href="#" class="link-green">Read more...</a></p>
+                                </div>
+                            </div>
                         </article>
                     </div>
                     <div class="six columns">
-                        <article class="homepage-article-boxes border5px">
-                            <h2>Cooking smartly</h2>
-                            <p>Did you know that a gas oven only uses 6% of its energy to cook? And an electric oven is not much better at 12%. If you use the oven on a warm day, you will also heat up the room and need to turn on a fan or air-conditioning.
-                                <a href="#" class="link-green">Read more...</a></p>
+                        <article class="homepage-article-boxes border5px box-shadow">
+                            <div class="row">
+                                <div class="two columns center">
+                                    <img class="image-responsive" src="images/icons/128/disconnect.png" alt="">
+                                </div>
+                                <div class="ten columns">
+                                    <h2>Cooking smartly</h2>
+                                    <p>Did you know that a gas oven only uses 6% of its energy to cook? And an electric oven is not much better at 12%. If you use the oven on a warm day, you will also heat up the room and need to turn on a fan or air-conditioning.
+                                        <a href="#" class="link-green">Read more...</a></p>
+                                </div>
+                            </div>
                         </article>
                     </div>
                 </div>
                 <div class="row">
                     <div class="six columns">
-                        <article class="homepage-article-boxes border5px">
-                            <h2>Food’s Carbon Footprint: Eat Organic</h2>
-                            <p>Organic farming methods for both crops and animals have a much lower impact on the environment than conventional methods. Organic-certified farms must use natural methods for soil fertilisation, weed prevention and pest control.
-                                <a href="#" class="link-green">Read more...</a></p>
+                        <article class="homepage-article-boxes border5px box-shadow">
+                            <div class="row">
+                                <div class="two columns center">
+                                    <img class="image-responsive" src="images/icons/128/organic_waste.png" alt="">
+                                </div>
+                                <div class="ten columns">
+                                    <h2>Food’s Carbon Footprint: Eat Organic</h2>
+                                    <p>Organic farming methods for both crops and animals have a much lower impact on the environment than conventional methods. Organic-certified farms must use natural methods for soil fertilisation, weed prevention and
+                                        pest control.
+                                        <a href="#" class="link-green">Read more...</a></p>
+                                </div>
+                            </div>
                         </article>
                     </div>
                     <div class="six columns">
-                        <article class="homepage-article-boxes border5px">
-                            <h2>Food’s Carbon Footprint: Save water</h2>
-                            <p>Water is a precious resource that is becoming scarce in many countries such as Egypt, Mexico, Pakistan and Australia. And even if you do not live in one of these arid countries, you may be wearing or using goods and consuming
-                                foods produced in those places, thus contributing to their water debt. <a href="#" class="link-green">Read more...</a></p>
+                        <article class="homepage-article-boxes border5px box-shadow">
+                            <div class="row">
+                                <div class="two columns center">
+                                    <img class="image-responsive" src="images/icons/128/water.png" alt="">
+                                </div>
+                                <div class="ten columns">
+                                    <h2>Food’s Carbon Footprint: Save water</h2>
+                                    <p>Water is a precious resource that is becoming scarce in many countries such as Egypt, Mexico, Pakistan and Australia. And even if you do not live in one of these arid countries, you may be wearing or using goods and
+                                        consuming foods produced in those places, thus contributing to their water debt. <a href="#" class="link-green">Read more...</a></p>
+                                </div>
+                            </div>
                         </article>
                     </div>
                 </div>
 
             </section>
 
-            <section class="eggshell-bg max-green padding4pc min-height-300">
-                <div class="row">
-                    <h1>Talking about us</h1>
+            <section class="eggshell-bg max-green padding2pc min-height-300">
+                <div class="row padding1pc-bottom">
+                    <h1>Talking about us <i class="fa fa-users" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
                     <div class="three columns">
@@ -172,9 +202,9 @@
                 </div>
             </section>
 
-            <section class="limerick-bg white padding4pc">
-                <div class="row">
-                    <h1>Videos</h1>
+            <section class="limerick-bg white padding2pc">
+                <div class="row padding1pc-bottom">
+                    <h1 class="text-shadow-grey">Videos <i class="fa fa-video-camera" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
                     <div class="three columns bottom-gap">
@@ -208,85 +238,124 @@
                 </div>
             </section>
 
-            <section class="pastel-gray-bg max-green padding4pc min-height-300">
-                <div class="row">
-                    <h1>Environmental friendly products</h1>
+            <section class="pastel-gray-bg max-green padding2pc min-height-300">
+                <div class="row padding1pc-bottom">
+                    <h1>Environmental friendly products <i class="fa fa-shopping-basket" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/bananas.jpg" alt="">
                         <h3>Bananas 1kg Canary Islands 3.99$</h3>
                     </div>
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/coffee.jpg" alt="">
                         <h3>Coffee 0.5kg Lesotho 12.99$</h3>
                     </div>
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/flour.jpg" alt="">
                         <h3>Flour 2kf Armenia 2.99$</h3>
                     </div>
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/mango.jpg" alt="">
                         <h3>Mango 1piece Portugal 1.99$</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/pasta.jpg" alt="">
                         <h3>Pasta 1kg Sicily 3.99$</h3>
                     </div>
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/plates.jpg" alt="">
                         <h3>Leaf plates x 20 Germany 10.99$</h3>
                     </div>
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/shoes.jpg" alt="">
                         <h3>Cannabis shoes France 39.99$</h3>
                     </div>
-                    <div class="three columns white-bg general-boxes border5px bottom-gap">
+                    <div class="three columns white-bg general-boxes box-shadow  border5px bottom-gap">
                         <img src="images/products/tofu.jpg" alt="">
                         <h3>Tofu 1kg Bangalore 3.99$</h3>
                     </div>
                 </div>
             </section>
 
-            <section class="eggshell-bg max-green padding4pc min-height-300">
-                <div class="row">
-                    <h1>Frequently asked questions</h1>
+            <section class="eggshell-bg max-green padding2pc min-height-300">
+                <div class="row padding1pc-bottom">
+                    <h1>Frequently asked questions <i class="fa fa-question" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
-                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is an ecological footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
-                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>How big is our ecological footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
-                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is a carbon footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What is a carbon footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What does the footprint calculator do?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
-                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>How does a footprint calculator work?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
-                    <div class="four columns white-bg border5px general-boxes bottom-gap">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>Is the calculator international?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>Is the calculator international?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
                 </div>
             </section>
 
-            <footer class="pastel-gray-bg max-green padding4pc min-height-300">
-                <h4>The top 10 foods</h4>
-                <p>When you bite into a hamburger or slice into some salmon, do you think about the impact it had on the environment on its way to you?</p>
-            </footer>
+            <section class="limerick-bg max-green padding2pc">
+                <div class="row">
+                    <div class="four columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What is an ecological footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="four columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>How big is our ecological footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="four columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What is a carbon footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                </div>
+            </section>
 
         </article>
     </main>
-    <footer class="sea-blue-bg white text-right">
-        <h3 class="padding1pc">Copyright Team4 DigitalSkillsAcademy</h3>
+    <footer class="sea-blue-bg white padding2pc">
+        <div class="row">
+            <div class="six columns">
+                <span>Made with <i class="limerick fa fa-heart" aria-hidden="true"></i> by Team Quattro for Digital Skills Academy 2016-2017</span>
+            </div>
+
+            <div class="six columns">
+                <span class="u-pull-right">
+                    <a href="#"><i class="social-icons limerick fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="social-icons limerick fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="social-icons limerick fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="social-icons limerick fa fa-rss fa-2x" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
     </footer>
 </body>
 

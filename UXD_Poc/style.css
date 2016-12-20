@@ -144,6 +144,13 @@ nav>ul>li a {
 
 nav>ul>li a:hover {
     background-color: #88d498;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+nav>ul>li a:hover i {
+    color: #1a936f;
 }
 
 .info {
@@ -286,6 +293,12 @@ nav>ul>li a:hover {
     min-height: 220px;
 }
 
+.box-shadow {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
 .bottom-gap {
     margin-bottom: 2%;
 }
@@ -345,6 +358,14 @@ h1 {
 
 .padding5pc {
     padding: 5%;
+}
+
+.padding1pc-bottom {
+    padding: 0 0 1% 0;
+}
+
+.padding2pc-bottom {
+    padding: 0 0 2% 0;
 }
 
 .text-right {
@@ -580,4 +601,22 @@ hr {
 
 .video-container video.fillWidth {
     width: 100%;
+}
+
+.text-shadow-grey {
+    text-shadow: 0 0 2px grey;
+}
+
+.image-responsive {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-icons {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.center {
+    text-align: center;
 }
