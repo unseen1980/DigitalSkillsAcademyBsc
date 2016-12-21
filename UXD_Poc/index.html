@@ -16,7 +16,7 @@
 <body>
     <main class="page-wrap">
         <header class="sea-blue-bg white header">
-            <img src="images/logo.png" class="hide-on-small">
+            <a href="index.html"><img src="images/logo.png" class="hide-on-small"></a>
             <div>
                 <h1>ETHICAL EATERS</h1>
                 <hr class="hr-header">
@@ -28,10 +28,16 @@
                     <li><a href="#news">News <i class="fa fa-newspaper-o limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#contact">Partners <i class="fa fa-globe limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#about">Shop <i class="fa fa-shopping-cart limerick" aria-hidden="true"></i></a></li>
-                    <li><a href="#about">Search <i class="fa fa-search limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="#openModal">Search <i class="fa fa-search limerick" aria-hidden="true"></i></a></li>
                 </ul>
                 <div class="burger">&#9776;</div>
             </nav>
+            <div id="openModal" class="modalDialog">
+                <div> <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <input class="u-full-width" type="email" placeholder="Type anything..."></input>
+                    <button class="button-primary" type="submit">Search <i class="fa fa-forward" aria-hidden="true"></i></button>
+                </div>
+            </div>
 
         </header>
 
@@ -166,45 +172,9 @@
 
             </section>
 
-            <section class="eggshell-bg max-green padding2pc min-height-300">
+            <section class="eggshell-bg max-green padding2pc">
                 <div class="row padding1pc-bottom">
-                    <h1>Talking about us <i class="fa fa-users" aria-hidden="true"></i></h1>
-                </div>
-                <div class="row">
-                    <div class="three columns">
-                        <article class="homepage-celebity-boxes border5px">
-                            <img src="images/clinton.jpg" alt="">
-                            <p>"All my blood tests are good, and my vital signs are good, and I feel good, and I also have, believe it or not, more energy."</p>
-                            <h3>B.Clinton</h3>
-                        </article>
-                    </div>
-                    <div class="three columns">
-                        <article class="homepage-celebity-boxes border5px">
-                            <img src="images/portman.jpg" alt="">
-                            <p>"The human cost of factory farming — both the compromised welfare of slaughterhouse workers and, even more, the environmental effects of the mass production of animals — is staggering"</p>
-                            <h3>N.Portman</h3>
-                        </article>
-                    </div>
-                    <div class="three columns">
-                        <article class="homepage-celebity-boxes border5px">
-                            <img src="images/lewis.jpg" alt="">
-                            <p>"Went vegan after meeting two people, a doctor and a nutritionist, that inspired him to switch his diet."</p>
-                            <h3>C.Lewis</h3>
-                        </article>
-                    </div>
-                    <div class="three columns">
-                        <article class="homepage-celebity-boxes border5px">
-                            <img src="images/ellen.jpg" alt="">
-                            <p>"I do it because I love animals, and I saw the reality and I just couldn’t ignore it anymore."</p>
-                            <h3>E.DeGeneres</h3>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="limerick-bg white padding2pc">
-                <div class="row padding1pc-bottom">
-                    <h1 class="text-shadow-grey">Videos <i class="fa fa-video-camera" aria-hidden="true"></i></h1>
+                    <h1>Videos <i class="fa fa-video-camera" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
                     <div class="three columns bottom-gap">
@@ -234,6 +204,48 @@
                                 <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/bxWIlZ9EtC4"></iframe>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="limerick-bg white padding2pc min-height-300">
+                <div class="row padding1pc-bottom text-shadow-grey">
+                    <h1>Frequently asked questions <i class="fa fa-question" aria-hidden="true"></i></h1>
+                </div>
+                <div class="row max-green">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What is an ecological footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>How big is our ecological footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What is a carbon footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What is a carbon footprint?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                </div>
+                <div class="row max-green">
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>What does the footprint calculator do?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>How does a footprint calculator work?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>Is the calculator international?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    </div>
+                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
+                        <h2>Is the calculator international?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
                     </div>
                 </div>
             </section>
@@ -282,42 +294,36 @@
 
             <section class="eggshell-bg max-green padding2pc min-height-300">
                 <div class="row padding1pc-bottom">
-                    <h1>Frequently asked questions <i class="fa fa-question" aria-hidden="true"></i></h1>
+                    <h1>Talking about us <i class="fa fa-users" aria-hidden="true"></i></h1>
                 </div>
                 <div class="row">
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>What is an ecological footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    <div class="three columns">
+                        <article class="homepage-celebity-boxes border5px">
+                            <img src="images/clinton.jpg" alt="">
+                            <p>"All my blood tests are good, and my vital signs are good, and I feel good, and I also have, believe it or not, more energy."</p>
+                            <h3>B.Clinton</h3>
+                        </article>
                     </div>
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>How big is our ecological footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    <div class="three columns">
+                        <article class="homepage-celebity-boxes border5px">
+                            <img src="images/portman.jpg" alt="">
+                            <p>"The human cost of factory farming — both the compromised welfare of slaughterhouse workers and, even more, the environmental effects of the mass production of animals — is staggering"</p>
+                            <h3>N.Portman</h3>
+                        </article>
                     </div>
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>What is a carbon footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    <div class="three columns">
+                        <article class="homepage-celebity-boxes border5px">
+                            <img src="images/lewis.jpg" alt="">
+                            <p>"Went vegan after meeting two people, a doctor and a nutritionist, that inspired him to switch his diet."</p>
+                            <h3>C.Lewis</h3>
+                        </article>
                     </div>
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>What is a carbon footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>What does the footprint calculator do?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
-                    </div>
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>How does a footprint calculator work?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
-                    </div>
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>Is the calculator international?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
-                    </div>
-                    <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
-                        <h2>Is the calculator international?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                    <div class="three columns">
+                        <article class="homepage-celebity-boxes border5px">
+                            <img src="images/ellen.jpg" alt="">
+                            <p>"I do it because I love animals, and I saw the reality and I just couldn’t ignore it anymore."</p>
+                            <h3>E.DeGeneres</h3>
+                        </article>
                     </div>
                 </div>
             </section>
