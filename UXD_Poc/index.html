@@ -17,21 +17,29 @@
     <main class="page-wrap">
         <header class="sea-blue-bg white header">
             <a href="index.html"><img src="images/logo.png" class="hide-on-small"></a>
-            <div>
+            <div class="logo">
                 <h1>ETHICAL EATERS</h1>
                 <hr class="hr-header">
                 <h3>your food - planet - your choice</h3>
             </div>
             <nav>
                 <ul class="show-nav">
-                    <li><a href="#home">Personal Tracker <i class="fa fa-calculator limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html">Personal Tracker <i class="fa fa-calculator limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#news">News <i class="fa fa-newspaper-o limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#contact">Partners <i class="fa fa-globe limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#about">Shop <i class="fa fa-shopping-cart limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#openModal">Search <i class="fa fa-search limerick" aria-hidden="true"></i></a></li>
                 </ul>
-                <div class="burger">&#9776;</div>
+                <div class="burger" onclick="openNav()">&#9776;</div>
             </nav>
+            <div id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="login.html"><i class="fa fa-calculator limerick" aria-hidden="true"></i> Personal Tracker</a>
+                <a href="#"><i class="fa fa-newspaper-o limerick" aria-hidden="true"></i> News</a>
+                <a href="#"><i class="fa fa-globe limerick" aria-hidden="true"></i> Partners</a>
+                <a href="#"><i class="fa fa-shopping-cart limerick" aria-hidden="true"></i> Shop</a>
+                <a href="#openModal"><i class="fa fa-search limerick" aria-hidden="true"></i> Search</a>
+            </div>
             <div id="openModal" class="modalDialog">
                 <div> <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
                     <input class="u-full-width" type="email" placeholder="Type anything..."></input>
@@ -41,25 +49,9 @@
 
         </header>
 
-        <article>
-
-            <!--<section class="homepage-hero-module">
-                <div class="video-container">
-                    <div class="title-container">
-                        <div class="headline eggshell">
-                            <h1>&#147;The greatest threat to our planet is the belief that someone else will save it.&#148;</h1>
-                            <h3>~Robert Swan</h3>
-                        </div>
-                    </div>
-                    <div class="filter"></div>
-                    <video autoplay loop class="fillWidth">
-                        <source src="videos/leafs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                        <source src="videos/leafs.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                    </video>
-                </div>
-            </section>-->
-            <section class="max-green-bg max-green padding4pc css-img min-height-300 info">
-                <h1>The greatest threat to our planet is the belief that someone else will save it</h1>
+        <article id="main">
+            <section class="max-green-bg white padding4pc css-img min-height-300 info">
+                <h2 class="text-shadow-grey">The greatest threat to our planet is the belief that someone else will save it.</h2>
             </section>
 
             <section class="limerick-bg white padding2pc min-height-300">
@@ -67,8 +59,10 @@
                     <div class="six columns">
                         <h1 class="text-shadow-grey">Personal tracker <i class="fa fa-calculator" aria-hidden="true"></i></h1>
                         <h2 class="text-shadow-grey padding1pc-bottom">What did you eat today?</h2>
-                        <h3 class="text-shadow-grey">The food we consume contributes to climate change. The production, packaging and transportation of food all consumes energy and results in carbon emissions which threaten to raise average global surface temperatures. However, not
-                            all foods are equal... The Personal tracker provides the opportunity to calculate the resultant carbon dioxide from the food you eat, called your "Food Carbon Footprint".</h3>
+                        <h3 class="text-shadow-grey">The food we consume contributes to climate change. The production, packaging and transportation of
+                            food all consumes energy and results in carbon emissions which threaten to raise average global
+                            surface temperatures. However, not all foods are equal... The Personal tracker provides the opportunity
+                            to calculate the resultant carbon dioxide from the food you eat, called your "Food Carbon Footprint".</h3>
                     </div>
                     <div class="six columns">
                         <div class="white-bg max-green padding2pc border5px box-shadow">
@@ -120,8 +114,10 @@
                                 </div>
                                 <div class="ten columns">
                                     <h2>Carbon Footprint Ranking of Food</h2>
-                                    <p>Changing the foods that you eat can have a big impact on your carbon footprint. And reduce pollution, preserve the environment and slow global warming. Many of these changes will also save you money, improve your health
-                                        and even keep you fit! <a href="#" class="link-green">Read more...</a></p>
+                                    <p>Changing the foods that you eat can have a big impact on your carbon footprint. And reduce
+                                        pollution, preserve the environment and slow global warming. Many of these changes
+                                        will also save you money, improve your health and even keep you fit! <a href="#"
+                                            class="link-green">Read more...</a></p>
                                 </div>
                             </div>
                         </article>
@@ -134,7 +130,9 @@
                                 </div>
                                 <div class="ten columns">
                                     <h2>Cooking smartly</h2>
-                                    <p>Did you know that a gas oven only uses 6% of its energy to cook? And an electric oven is not much better at 12%. If you use the oven on a warm day, you will also heat up the room and need to turn on a fan or air-conditioning.
+                                    <p>Did you know that a gas oven only uses 6% of its energy to cook? And an electric oven
+                                        is not much better at 12%. If you use the oven on a warm day, you will also heat
+                                        up the room and need to turn on a fan or air-conditioning.
                                         <a href="#" class="link-green">Read more...</a></p>
                                 </div>
                             </div>
@@ -150,8 +148,9 @@
                                 </div>
                                 <div class="ten columns">
                                     <h2>Food’s Carbon Footprint: Eat Organic</h2>
-                                    <p>Organic farming methods for both crops and animals have a much lower impact on the environment than conventional methods. Organic-certified farms must use natural methods for soil fertilisation, weed prevention and
-                                        pest control.
+                                    <p>Organic farming methods for both crops and animals have a much lower impact on the environment
+                                        than conventional methods. Organic-certified farms must use natural methods for soil
+                                        fertilisation, weed prevention and pest control.
                                         <a href="#" class="link-green">Read more...</a></p>
                                 </div>
                             </div>
@@ -165,8 +164,10 @@
                                 </div>
                                 <div class="ten columns">
                                     <h2>Food’s Carbon Footprint: Save water</h2>
-                                    <p>Water is a precious resource that is becoming scarce in many countries such as Egypt, Mexico, Pakistan and Australia. And even if you do not live in one of these arid countries, you may be wearing or using goods and
-                                        consuming foods produced in those places, thus contributing to their water debt. <a href="#" class="link-green">Read more...</a></p>
+                                    <p>Water is a precious resource that is becoming scarce in many countries such as Egypt,
+                                        Mexico, Pakistan and Australia. And even if you do not live in one of these arid
+                                        countries, you may be wearing or using goods and consuming foods produced in those
+                                        places, thus contributing to their water debt. <a href="#" class="link-green">Read more...</a></p>
                                 </div>
                             </div>
                         </article>
@@ -218,37 +219,53 @@
                 <div class="row max-green">
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is an ecological footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>How big is our ecological footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is a carbon footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is a carbon footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                 </div>
                 <div class="row max-green">
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What does the footprint calculator do?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>How does a footprint calculator work?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>Is the calculator international?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="three columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>Is the calculator international?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                 </div>
             </section>
@@ -303,21 +320,24 @@
                     <div class="three columns">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="images/clinton.jpg" alt="">
-                            <p>"All my blood tests are good, and my vital signs are good, and I feel good, and I also have, believe it or not, more energy."</p>
+                            <p>"All my blood tests are good, and my vital signs are good, and I feel good, and I also have,
+                                believe it or not, more energy."</p>
                             <h3>B.Clinton</h3>
                         </article>
                     </div>
                     <div class="three columns">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="images/portman.jpg" alt="">
-                            <p>"The human cost of factory farming — both the compromised welfare of slaughterhouse workers and, even more, the environmental effects of the mass production of animals — is staggering"</p>
+                            <p>"The human cost of factory farming — both the compromised welfare of slaughterhouse workers and,
+                                even more, the environmental effects of the mass production of animals — is staggering"</p>
                             <h3>N.Portman</h3>
                         </article>
                     </div>
                     <div class="three columns">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="images/lewis.jpg" alt="">
-                            <p>"Went vegan after meeting two people, a doctor and a nutritionist, that inspired him to switch his diet."</p>
+                            <p>"Went vegan after meeting two people, a doctor and a nutritionist, that inspired him to switch
+                                his diet."</p>
                             <h3>C.Lewis</h3>
                         </article>
                     </div>
@@ -335,15 +355,21 @@
                 <div class="row">
                     <div class="four columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is an ecological footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="four columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>How big is our ecological footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                     <div class="four columns white-bg border5px general-boxes box-shadow  bottom-gap">
                         <h2>What is a carbon footprint?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam, itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum esse error amet veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique explicabo distinctio id totam,
+                            itaque libero, necessitatibus illo doloribus nemo quis nulla rerum, cupiditate nesciunt dolorum
+                            esse error amet veniam.</p>
                     </div>
                 </div>
             </section>

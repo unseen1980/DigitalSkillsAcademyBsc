@@ -24,14 +24,22 @@
             </div>
             <nav>
                 <ul class="show-nav">
-                    <li><a href="#home">Personal Tracker <i class="fa fa-calculator limerick" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html">Personal Tracker <i class="fa fa-calculator limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#news">News <i class="fa fa-newspaper-o limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#contact">Partners <i class="fa fa-globe limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#about">Shop <i class="fa fa-shopping-cart limerick" aria-hidden="true"></i></a></li>
                     <li><a href="#openModal">Search <i class="fa fa-search limerick" aria-hidden="true"></i></a></li>
                 </ul>
-                <div class="burger">&#9776;</div>
+                <div class="burger" onclick="openNav()">&#9776;</div>
             </nav>
+            <div id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="login.html"><i class="fa fa-calculator limerick" aria-hidden="true"></i> Personal Tracker</a>
+                <a href="#"><i class="fa fa-newspaper-o limerick" aria-hidden="true"></i> News</a>
+                <a href="#"><i class="fa fa-globe limerick" aria-hidden="true"></i> Partners</a>
+                <a href="#"><i class="fa fa-shopping-cart limerick" aria-hidden="true"></i> Shop</a>
+                <a href="#openModal"><i class="fa fa-search limerick" aria-hidden="true"></i> Search</a>
+            </div>
             <div id="openModal" class="modalDialog">
                 <div> <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
                     <input class="u-full-width" type="email" placeholder="Type anything..."></input>
