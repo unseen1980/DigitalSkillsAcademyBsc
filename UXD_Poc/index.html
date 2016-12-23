@@ -10,6 +10,9 @@
     <link href="style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="app.js"></script>
 </head>
 
@@ -65,7 +68,7 @@
                     </div>
                     <div class="six columns">
                         <div class="white-bg max-green padding2pc border5px box-shadow">
-                            <form>
+                            <form onsubmit="return false;">
                                 <label>Meat</label>
                                 <select class="u-full-width">
                                     <option value="Option 1">Beef</option>
@@ -92,7 +95,7 @@
                                     <option value="Option 1">Apple</option>
                                     <option value="Option 2">Banana</option>
                                 </select>
-                                <button class="button-primary" type="submit">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
+                                <button id="submit-results" class="button-primary">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
                             </form>
                         </div>
                     </div>

@@ -236,6 +236,10 @@ nav>ul>li a:hover i {
     margin-left: 50px;
 }
 
+.hide-on-small {
+    display: none;
+}
+
 @media (min-width: 320px) {
     .hide-on-small {
         display: none;
@@ -334,6 +338,16 @@ nav>ul>li a:hover i {
     padding: 1%;
     text-align: center;
     min-height: 220px;
+}
+
+.calculator-boxes {
+    padding: 1%;
+    min-height: 142px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 .box-shadow {
