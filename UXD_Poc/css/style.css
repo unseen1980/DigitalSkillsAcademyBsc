@@ -65,13 +65,6 @@
     box-sizing: border-box;
 }
 
-.column,
-.columns {
-    width: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-
 .show-nav {
     display: none;
 }
@@ -83,7 +76,7 @@
 }
 
 .css-img {
-    background-image: url(images/sky304.jpg);
+    background-image: url(../images/sky304.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -244,6 +237,12 @@ nav>ul>li a:hover i {
     .hide-on-small {
         display: none;
     }
+    .sticky {
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        width: 96%;
+    }
 }
 
 @media (min-width: 401px) {
@@ -253,6 +252,12 @@ nav>ul>li a:hover i {
     }
     .hide-on-small {
         display: inline-block;
+    }
+    .sticky {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 96%;
     }
 }
 
@@ -269,60 +274,113 @@ nav>ul>li a:hover i {
     .burger {
         display: none;
     }
-    .column,
-    .columns {
+    .one:first-child {
+        margin-left: 0;
+    }
+    .one {
+        width: 4.66666666667%;
+        float: left;
+        box-sizing: border-box;
         margin-left: 4%;
     }
-    .column:first-child,
-    .columns:first-child {
+    .two:first-child {
         margin-left: 0;
     }
-    .one.column,
-    .one.columns {
-        width: 4.66666666667%;
-    }
-    .two.columns {
+    .two {
         width: 13.3333333333%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
     }
-    .three.columns {
-        width: 22%;
-    }
-    .four.columns {
-        width: 30.6666666667%;
-    }
-    .five.columns {
-        width: 39.3333333333%;
-    }
-    .six.columns {
-        width: 48%;
-    }
-    .seven.columns {
-        width: 56.6666666667%;
-    }
-    .eight.columns {
-        width: 65.3333333333%;
-    }
-    .nine.columns {
-        width: 74.0%;
-    }
-    .ten.columns {
-        width: 82.6666666667%;
-    }
-    .eleven.columns {
-        width: 91.3333333333%;
-    }
-    .twelve.columns {
-        width: 100%;
+    .three:first-child {
         margin-left: 0;
     }
-    .one-third.column {
+    .three {
+        width: 22%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .four:first-child {
+        margin-left: 0;
+    }
+    .four {
         width: 30.6666666667%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
     }
-    .two-thirds.column {
-        width: 65.3333333333%;
+    .five:first-child {
+        margin-left: 0;
     }
-    .one-half.column {
+    .five {
+        width: 39.3333333333%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .six:first-child {
+        margin-left: 0;
+    }
+    .six {
         width: 48%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .seven:first-child {
+        margin-left: 0;
+    }
+    .seven {
+        width: 56.6666666667%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .eight:first-child {
+        margin-left: 0;
+    }
+    .eight {
+        width: 65.3333333333%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .nine:first-child {
+        margin-left: 0;
+    }
+    .nine {
+        width: 74.0%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .ten:first-child {
+        margin-left: 0;
+    }
+    .ten {
+        width: 82.6666666667%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .eleven:first-child {
+        margin-left: 0;
+    }
+    .eleven {
+        width: 91.3333333333%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 4%;
+    }
+    .twelve:first-child {
+        margin-left: 0;
+    }
+    .twelve {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 0;
     }
 }
 
@@ -503,34 +561,10 @@ select {
     box-sizing: border-box;
 }
 
-input[type="number"],
-input[type="password"],
-input[type="email"],
-input[type="text"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus,
-select:focus {
-    border: 1px solid #33C3F0;
-    outline: 0;
-}
-
-label,
-legend {
+label {
     display: block;
     margin-bottom: .5rem;
     font-weight: 600;
-}
-
-fieldset {
-    padding: 0;
-    border-width: 0;
 }
 
 input[type="checkbox"],
@@ -550,8 +584,7 @@ button,
 }
 
 input,
-select,
-fieldset {
+select {
     margin-bottom: .5rem;
 }
 
@@ -606,14 +639,7 @@ hr {
     text-align: center;
 }
 
-.sticky {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 96%;
-}
-
-.modalDialog {
+.modal-dialog {
     position: fixed;
     top: 0;
     right: 0;
@@ -628,12 +654,12 @@ hr {
     pointer-events: none;
 }
 
-.modalDialog:target {
+.modal-dialog:target {
     opacity: 1;
     pointer-events: auto;
 }
 
-.modalDialog>div {
+.modal-dialog>div {
     width: 33%;
     position: relative;
     margin: 10% auto;
@@ -642,7 +668,7 @@ hr {
     background: #fff;
 }
 
-.modalDialog>div>button {
+.modal-dialog>div>button {
     width: 100%;
 }
 

@@ -9,9 +9,14 @@ function closeNav() {
 $(function() {
     $('#submit-results').click(function() {
         console.log('test')
-        window.location.href = window.location.origin + '/calculator.html';
+        if (window.location.host === 'site232.digitalskillsacademy.me') {
+            window.location.href = 'http://site232.digitalskillsacademy.me/team4/calculator.html'
+        } else {
+            window.location.href = window.location.origin + '/calculator.html';
+        }
     })
-    if (window.location.pathname === '/calculator.html') {
+
+    if (window.location.pathname.indexOf('/calculator.html') >= 0) {
         Highcharts.chart('container0', {
             chart: {
                 type: 'areaspline'
