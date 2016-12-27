@@ -187,4 +187,15 @@ $(function() {
             }]
         });
     }
+
+    $("#slideshow > img:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > img:first')
+            .hide()
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 8000);
 });

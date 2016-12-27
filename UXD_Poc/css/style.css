@@ -369,7 +369,11 @@ hr {
 }
 
 .expand-section {
-    min-height: calc(100vh - 190px);
+    min-height: 90vh;
+}
+
+.expand-section-calculator {
+    min-height: 50vh;
 }
 
 .signup-link {
@@ -418,6 +422,10 @@ hr {
 .social-icons {
     margin-right: 10px;
     padding-right: 10px;
+}
+
+.article-search {
+    padding: 5px !important;
 }
 
 
