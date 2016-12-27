@@ -369,11 +369,15 @@ hr {
 }
 
 .expand-section {
-    min-height: 90vh;
+    min-height: calc(100vh - 190px);
 }
 
 .expand-section-calculator {
     min-height: 50vh;
+}
+
+.expand-section-article {
+    min-height: calc(100vh - 20px);
 }
 
 .signup-link {
