@@ -432,6 +432,13 @@ hr {
     padding: 5px !important;
 }
 
+.css-img {
+    background-image: url(../images/sky304.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 /*End of misc classes*/
 
@@ -449,13 +456,6 @@ hr {
     display: block;
     font-size: 2.5em;
     cursor: pointer;
-}
-
-.css-img {
-    background-image: url(../images/sky304.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .header {
