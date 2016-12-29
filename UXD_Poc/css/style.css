@@ -524,7 +524,7 @@ nav>ul>li a:hover i {
 
 /*Side drawer*/
 
-.sidenav {
+.side-drawer {
     height: 100%;
     width: 0;
     position: fixed;
@@ -537,7 +537,7 @@ nav>ul>li a:hover i {
     padding-left: 0 !important;
 }
 
-.sidenav a {
+.side-drawer a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
@@ -546,7 +546,7 @@ nav>ul>li a:hover i {
     transition: 0.3s
 }
 
-.sidenav .closebtn {
+.side-drawer .closebtn {
     position: absolute;
     top: 0;
     right: 25px;

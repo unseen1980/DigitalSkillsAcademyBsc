@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("sidenav").style.width = "66%";
+    document.getElementById("side-drawer").style.width = "66%";
 }
 
 function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("side-drawer").style.width = "0";
 }
 
 $(function() {
