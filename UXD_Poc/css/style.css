@@ -433,10 +433,14 @@ hr {
 }
 
 .css-img {
-    background-image: url(../images/sky304.jpg);
+    background-image: url(../assets/images/sky305.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.moto {
+    width: 400px;
 }
 
 

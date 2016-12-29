@@ -4,22 +4,22 @@
 <head>
     <title>Ethical Eaters - What is your carbon footprint?</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Learn about your carbon footprint, use the personal tracker">
+    <meta name="keywords" content="Carbon, Footprint, Food, perosnal tracker, calculator, environment">
+    <meta name="author" content="Christos Koutsiaris">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="app.js"></script>
+    <script src="libraries/vendors.js"></script>
+    <script src="scripts/app.js"></script>
 </head>
 
 <body>
     <!--Header - Navigation Section-->
     <header class="sea-blue-bg white header">
-        <a href="index.html"><img src="images/logo.png" class="hide-on-small" alt="Ethical eaters logo"></a>
+        <a href="index.html"><img src="assets/images/logo.png" class="hide-on-small" alt="Ethical eaters logo"></a>
         <div class="logo">
             <h1>ETHICAL EATERS</h1>
             <hr class="hr-header">
@@ -58,7 +58,7 @@
     <main>
         <article id="main">
             <section class="max-green-bg white padding4pc css-img min-height-300 info">
-                <h2 class="text-shadow-grey">The greatest threat to our planet is the belief that someone else will save it.</h2>
+                <h2 class="text-shadow-grey moto">The greatest threat to our planet is the belief that someone else will save it. <em>~Robert Swan</em></h2>
             </section>
 
             <section class="limerick-bg white padding2pc min-height-300">
@@ -115,7 +115,7 @@
                         <article class="homepage-article-boxes border5px box-shadow">
                             <div class="row">
                                 <div class="two  center">
-                                    <img class="image-responsive" src="images/icons/128/leaf.png" alt="">
+                                    <img class="image-responsive" src="assets/images/icons/128/leaf.png" alt="">
                                 </div>
                                 <div class="ten ">
                                     <h2>Carbon Footprint Ranking of Food</h2>
@@ -129,7 +129,7 @@
                         <article class="homepage-article-boxes border5px box-shadow">
                             <div class="row">
                                 <div class="two  center">
-                                    <img class="image-responsive" src="images/icons/128/disconnect.png" alt="">
+                                    <img class="image-responsive" src="assets/images/icons/128/disconnect.png" alt="">
                                 </div>
                                 <div class="ten ">
                                     <h2>Cooking smartly</h2>
@@ -145,7 +145,7 @@
                         <article class="homepage-article-boxes border5px box-shadow">
                             <div class="row">
                                 <div class="two  center">
-                                    <img class="image-responsive" src="images/icons/128/organic_waste.png" alt="">
+                                    <img class="image-responsive" src="assets/images/icons/128/organic_waste.png" alt="">
                                 </div>
                                 <div class="ten ">
                                     <h2>Food’s Carbon Footprint: Eat Organic</h2>
@@ -160,7 +160,7 @@
                         <article class="homepage-article-boxes border5px box-shadow">
                             <div class="row">
                                 <div class="two  center">
-                                    <img class="image-responsive" src="images/icons/128/water.png" alt="">
+                                    <img class="image-responsive" src="assets/images/icons/128/water.png" alt="">
                                 </div>
                                 <div class="ten ">
                                     <h2>Food’s Carbon Footprint: Save water</h2>
@@ -258,37 +258,37 @@
                 </div>
                 <div class="row">
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/bananas.jpg" alt="">
+                        <img src="assets/images/products/bananas.jpg" alt="">
                         <h3>Bananas 1kg Canary Islands 3.99$</h3>
                     </div>
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/coffee.jpg" alt="">
+                        <img src="assets/images/products/coffee.jpg" alt="">
                         <h3>Coffee 0.5kg Lesotho 12.99$</h3>
                     </div>
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/flour.jpg" alt="">
+                        <img src="assets/images/products/flour.jpg" alt="">
                         <h3>Flour 2kf Armenia 2.99$</h3>
                     </div>
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/mango.jpg" alt="">
+                        <img src="assets/images/products/mango.jpg" alt="">
                         <h3>Mango 1piece Portugal 1.99$</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/pasta.jpg" alt="">
+                        <img src="assets/images/products/pasta.jpg" alt="">
                         <h3>Pasta 1kg Sicily 3.99$</h3>
                     </div>
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/plates.jpg" alt="">
+                        <img src="assets/images/products/plates.jpg" alt="">
                         <h3>Leaf plates x 20 Germany 10.99$</h3>
                     </div>
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/shoes.jpg" alt="">
+                        <img src="assets/images/products/shoes.jpg" alt="">
                         <h3>Cannabis shoes France 39.99$</h3>
                     </div>
                     <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
-                        <img src="images/products/tofu.jpg" alt="">
+                        <img src="assets/images/products/tofu.jpg" alt="">
                         <h3>Tofu 1kg Bangalore 3.99$</h3>
                     </div>
                 </div>
@@ -301,28 +301,28 @@
                 <div class="row">
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
-                            <img src="images/clinton.jpg" alt="">
+                            <img src="assets/images/clinton.jpg" alt="">
                             <p>"All my blood tests are good, and my vital signs are good, and I feel good, and I also have, believe it or not, more energy."</p>
                             <h3>B.Clinton</h3>
                         </article>
                     </div>
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
-                            <img src="images/portman.jpg" alt="">
+                            <img src="assets/images/portman.jpg" alt="">
                             <p>"The human cost of factory farming — both the compromised welfare of slaughterhouse workers and, even more, the environmental effects of the mass production of animals — is staggering"</p>
                             <h3>N.Portman</h3>
                         </article>
                     </div>
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
-                            <img src="images/lewis.jpg" alt="">
+                            <img src="assets/images/lewis.jpg" alt="">
                             <p>"Went vegan after meeting two people, a doctor and a nutritionist, that inspired him to switch his diet."</p>
                             <h3>C.Lewis</h3>
                         </article>
                     </div>
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
-                            <img src="images/ellen.jpg" alt="">
+                            <img src="assets/images/ellen.jpg" alt="">
                             <p>"I do it because I love animals, and I saw the reality and I just couldn’t ignore it anymore."</p>
                             <h3>E.DeGeneres</h3>
                         </article>
