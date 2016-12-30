@@ -1,3 +1,5 @@
+// Christos_Koutsiaris_BScHn16B_S_UXRD__A2_Ethical_Eaters_STU-00001219-30-12-2016
+
 function openNav() {
     document.getElementById("side-drawer").style.width = "66%";
 }
@@ -8,7 +10,6 @@ function closeNav() {
 
 $(function() {
     $('#submit-results').click(function() {
-        console.log('test')
         if (window.location.host === 'site232.digitalskillsacademy.me') {
             window.location.href = 'http://site232.digitalskillsacademy.me/team4/calculator.html'
         } else {
