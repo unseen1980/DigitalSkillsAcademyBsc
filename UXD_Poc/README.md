@@ -14,7 +14,7 @@ Submission tag: Christos_Koutsiaris_BScHn16B_S_UXRD__A2_Ethical_Eaters_STU-00001
 
 ###Prototype demo
 
-##Available pages:
+####Available pages:
 
 1. index.html
 2. article.html
@@ -22,35 +22,35 @@ Submission tag: Christos_Koutsiaris_BScHn16B_S_UXRD__A2_Ethical_Eaters_STU-00001
 4. login.html
 5. register.html
 
-##Flows:
+####Flows:
 
 1. Navigation bar -> Personal tracker -> Login
 2. Navigation bar -> Personal tracker -> Login -> Register
 3. Homepage -> Submit form -> Results
 4. Homepage -> Articles(Read more) -> Article
 
-##Other:
+####Other:
 
 1. Navigation bar -> Search -> Search modal
 2. Article -> Slideshow widget bottom right
 3. Navigation bar in mobile/tablet view -> Side drawer
 
-##Javascript libraries
+####Javascript libraries
 
 1. Highcharts, only for presentation
 2. jQuery because of Highcharts requirement
 
 Both are bundled into vendors.js to minimize requests
 
-##Scripts
+####Scripts
 
 1. app.js - Minimal configuration for Highcharts demo and slideshow
 
-##Demo
+####Demo
 
 1. Hosted in DSA. [Link](http://site232.digitalskillsacademy.me/team4/)
 
-##Repository
+####Repository
 
 1. [Github] (https://github.com/unseen1980/DigitalSkillsAcademyBsc/tree/master/UXD_Poc)
 2. [Github commits] (https://github.com/unseen1980/DigitalSkillsAcademyBsc/commits/master)
