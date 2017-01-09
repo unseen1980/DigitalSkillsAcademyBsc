@@ -67,6 +67,10 @@
         padding-right: 5px;
     }
     
+    .padding5t {
+        padding-top: 5px;
+    }
+    
     .padding10t {
         padding-top: 10px;
     }
@@ -355,22 +359,42 @@
         display: none;
     }
     
+    h3 {
+        font-size: 18px;
+    }
+    
+    .caption>h4 {
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 15px;
+    }
+    
+    .font16 {
+        font-size: 16px;
+    }
+    
+    .font21 {
+        font-size: 21px;
+    }
+    
     @media(max-width: 768px) {
         .navbar-nav {
             margin: 10px;
             padding-left: 10px;
         }
-        ul.nav-tabs>li>a {
+        /*ul.nav-tabs>li>a {
             font-size: 21px;
         }
         ul.nav-tabs>li>span {
             font-size: 21px;
             color: #4BC6DF;
             display: inline;
-        }
-        .text-right {
+        }*/
+        /*.text-right {
             margin: 10px 10px 0 0;
-        }
+        }*/
         .container>.navbar-header {
             margin-right: 0;
         }
@@ -406,11 +430,20 @@
         .container>.navbar-collapse {
             margin-right: 0;
         }
+        .thumbnail {
+            min-height: 103px;
+            overflow: overlay;
+        }
+        .thumbnail>img {
+            float: left;
+            width: 33%;
+            margin-right: 2%;
+        }
     }
     
     @media (min-width: 992px) {
         .comments {
-            padding-top: 20%
+            padding-top: 34%
         }
         .panel {
             margin-bottom: 10px;
@@ -427,18 +460,6 @@
         }
     }
     
-    h3 {
-        font-size: 18px;
-    }
-    
-    .caption>h4 {
-        font-weight: 700;
-    }
-    
-    h4 {
-        font-size: 15px;
-    }
-    
     @media (min-width: 1260px) {
         .panel {
             margin-bottom: 20px;
@@ -448,7 +469,7 @@
             font-size: 14px;
         }
         .comments {
-            padding-top: 55%
+            padding-top: 36%
         }
         .extra-padding {
             padding-left: 15px;
