@@ -14,6 +14,19 @@
         background-color: #F5F5F5;
     }
     
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .footer {
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+        height: 60px;
+        background-color: #484848;
+    }
+    
     .white-background {
         background-color: #fff;
     }
@@ -143,7 +156,7 @@
         color: rgba(75, 198, 223, 0.4);
     }
     
-    .control__icon-wrapper {
+    .icon-wrapper {
         width: 2.55rem;
         height: 2.55rem;
         border: 0.0625rem solid rgba(75, 198, 223, 0.4);
@@ -156,9 +169,13 @@
         margin-right: 10px;
     }
     
+    .icon-wrapper>svg {
+        margin-top: 3px;
+    }
+    
     .guardian-icon {
         border: 0px;
-        margin-top: -10px;
+        margin-top: -13px;
     }
     
     .container {
@@ -264,7 +281,6 @@
     }
     
     .caption {
-        /*color: #5c5c5c !important;*/
         font-weight: 700;
     }
     
@@ -379,22 +395,16 @@
         font-size: 21px;
     }
     
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+        background-color: #00456E;
+    }
+    
     @media(max-width: 768px) {
         .navbar-nav {
             margin: 10px;
             padding-left: 10px;
         }
-        /*ul.nav-tabs>li>a {
-            font-size: 21px;
-        }
-        ul.nav-tabs>li>span {
-            font-size: 21px;
-            color: #4BC6DF;
-            display: inline;
-        }*/
-        /*.text-right {
-            margin: 10px 10px 0 0;
-        }*/
         .container>.navbar-header {
             margin-right: 0;
         }
@@ -415,7 +425,7 @@
             font-size: 21px;
         }
         .navbar-right {
-            background-color: #333;
+            background-color: #333 !important;
         }
         .row {
             margin-left: 0;
@@ -438,6 +448,22 @@
             float: left;
             width: 33%;
             margin-right: 2%;
+        }
+        .breadcrumb {
+            padding: 5px 15px;
+        }
+        .breadcrumb>li {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .breadcrumb-mobile-style>a {
+            color: #fff !important;
+        }
+        .breadcrumb-mobile-style {
+            background-color: #00456E;
+            padding: 7px;
+            margin-bottom: -5px;
+            margin-top: -5px;
         }
     }
     
