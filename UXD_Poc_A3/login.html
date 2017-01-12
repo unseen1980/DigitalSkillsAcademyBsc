@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Christos_Koutsiaris_BScHn16B_S_UXRD__A2_Ethical_Eaters_STU-00001219-30-12-2016-->
+    <title>Ethical Eaters - Login to personal tracker</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn about your carbon footprint, use the personal tracker">
+    <meta name="keywords" content="Carbon, Footprint, Food, perosnal tracker, calculator, environment">
+    <meta name="author" content="Christos Koutsiaris">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="libraries/vendors.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+
+<body>
+    <!--Header - Navigation Section-->
+    <header class="sea-blue-bg white header">
+        <a href="index.html"><img src="assets/images/logo.png" class="hide-on-small" alt="Ethical eaters logo"></a>
+        <div>
+            <h1>ETHICAL EATERS</h1>
+            <hr class="hr-header">
+            <h3>your food - planet - your choice</h3>
+        </div>
+        <nav>
+            <ul class="show-nav">
+                <li><a href="index.html">Home <i class="fa fa-home limerick" aria-hidden="true"></i></a></li>
+                <li><a href="login.html">Personal Tracker <i class="fa fa-calculator limerick" aria-hidden="true"></i></a></li>
+                <li><a href="#news">News <i class="fa fa-newspaper-o limerick" aria-hidden="true"></i></a></li>
+                <li><a href="#contact">Partners <i class="fa fa-globe limerick" aria-hidden="true"></i></a></li>
+                <li><a href="#about">Shop <i class="fa fa-shopping-cart limerick" aria-hidden="true"></i></a></li>
+                <li><a href="#search-modal">Search <i class="fa fa-search limerick" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="burger" onclick="openNav()">&#9776;</div>
+        </nav>
+        <div id="side-drawer" class="side-drawer">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><i class="fa fa-home limerick" aria-hidden="true"></i> Home</a>
+            <a href="login.html"><i class="fa fa-calculator limerick" aria-hidden="true"></i> Personal Tracker</a>
+            <a href="#"><i class="fa fa-newspaper-o limerick" aria-hidden="true"></i> News</a>
+            <a href="#"><i class="fa fa-globe limerick" aria-hidden="true"></i> Partners</a>
+            <a href="#"><i class="fa fa-shopping-cart limerick" aria-hidden="true"></i> Shop</a>
+            <a href="#search-modal"><i class="fa fa-search limerick" aria-hidden="true"></i> Search</a>
+        </div>
+        <div id="search-modal" class="modal-dialog">
+            <div> <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <input class="u-full-width" type="email" placeholder="Type anything..." />
+                <button class="button-primary" type="submit">Search <i class="fa fa-forward" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+    </header>
+    <!--End of Header - Navigation Section-->
+    <!--Main Section-->
+    <main>
+        <article>
+            <section class="limerick-bg white padding2pc expand-section">
+                <div class="row center">
+                    <h1 class="text-shadow-grey">Login</h1>
+                </div>
+                <div class="row">
+                    <div class="four ">&#8203;</div>
+                    <div class="four ">
+                        <div class="white-bg max-green padding2pc border5px box-shadow">
+                            <form>
+                                <label>Email</label>
+                                <input class="u-full-width" type="email" placeholder="Type your username" />
+                                <label>Password</label>
+                                <input class="u-full-width" type="password" placeholder="Type your password" />
+                                <button class="button-primary" type="submit">Login <i class="fa fa-forward" aria-hidden="true"></i></button>
+                                <label class="u-pull-right">Not a member? <a href="register.html" class="link-green">Sign up</a></label>
+                            </form>
+                        </div>
+                        <div class="four ">&#8203;</div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!--End of Main Section-->
+    <!--Footer Section-->
+    <footer class="sea-blue-bg white padding2pc">
+        <div class="row">
+            <div class="twelve">
+                <span class="u-pull-left">Made with <i class="limerick fa fa-heart" aria-hidden="true"></i> by Team Quattro for DSA</span>
+                <span class="u-pull-right">
+                    <a href="#"><i class="social-icons limerick fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="social-icons limerick fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="social-icons limerick fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="social-icons limerick fa fa-rss fa-2x" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer Section-->
+</body>
+
+</html>
