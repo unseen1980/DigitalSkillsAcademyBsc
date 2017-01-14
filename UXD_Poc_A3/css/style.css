@@ -161,6 +161,10 @@ h1 {
     text-align: left;
 }
 
+.font21 {
+    font-size: 21px;
+}
+
 .u-full-width {
     width: 100%;
     box-sizing: border-box;
@@ -398,7 +402,7 @@ hr {
 
 .calculator-boxes {
     padding: 1%;
-    min-height: 142px;
+    /*min-height: 142px;*/
 }
 
 .vertical-align {
@@ -632,6 +636,45 @@ nav>ul>li a:hover i {
 
 
 /*End of Modal dialog*/
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*Accordion*/
+
+.accordion {
+    background-color: #fff;
+    color: #1a936f;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.accordion.active,
+.accordion:hover {
+    font-weight: 800;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #fff;
+    color: #1a936f;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 3px;
+}
+
+
+/*End of accordion*/
 
 
 /*-----------------------------------------------------------------------------------*/

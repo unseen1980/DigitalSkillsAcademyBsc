@@ -199,4 +199,21 @@ $(function() {
             .end()
             .appendTo('#slideshow');
     }, 8000);
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                this.style.borderRadius = "5px";
+                panel.style.maxHeight = null;
+            } else {
+                this.style.borderRadius = "5px 5px 0px 0px";
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+        }
+    }
 });
