@@ -11,7 +11,7 @@ function closeNav() {
 $(function() {
     $('#submit-results').click(function() {
         if (window.location.host === 'site232.digitalskillsacademy.me') {
-            window.location.href = 'http://site232.digitalskillsacademy.me/team4/calculator.html'
+            window.location.href = 'http://site232.digitalskillsacademy.me/ethical-eaters/calculator.html'
         } else {
             window.location.href = window.location.origin + '/calculator.html';
         }
