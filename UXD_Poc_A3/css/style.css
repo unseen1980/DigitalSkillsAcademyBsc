@@ -15,11 +15,11 @@
 }
 
 .max-green {
-    color: #1a936f;
+    color: #1A916E;
 }
 
 .max-green-bg {
-    background-color: #1a936f;
+    background-color: #1A916E;
 }
 
 .queen-blue {
@@ -60,6 +60,14 @@
 
 .white-bg {
     background-color: #fff;
+}
+
+.gradient-green-bg {
+    background: #1A916E;
+    background: -webkit-linear-gradient(#1A916E, #88D498);
+    background: -o-linear-gradient(#1A916E, #88D498);
+    background: -moz-linear-gradient(#1A916E, #88D498);
+    background: linear-gradient(#1A916E, #88D498);
 }
 
 
@@ -244,8 +252,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #1A936F;
-    border-color: #1A936F;
+    background-color: #1A916E;
+    border-color: #1A916E;
 }
 
 .button.button-primary:hover,
@@ -356,7 +364,7 @@ hr {
 }
 
 .link-green {
-    color: #1a936f;
+    color: #1A916E;
 }
 
 .auto-resizable-iframe {
@@ -541,7 +549,7 @@ nav>ul>li a:hover {
 }
 
 nav>ul>li a:hover i {
-    color: #1a936f;
+    color: #1A916E;
 }
 
 
@@ -626,7 +634,7 @@ nav>ul>li a:hover i {
 }
 
 .close {
-    background: #1a936f;
+    background: #1A916E;
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
@@ -646,7 +654,7 @@ nav>ul>li a:hover i {
 
 .close:hover {
     background: #88d498;
-    color: #1a936f;
+    color: #1A916E;
 }
 
 
@@ -660,7 +668,7 @@ nav>ul>li a:hover i {
 
 .accordion {
     background-color: #fff;
-    color: #1a936f;
+    color: #1A916E;
     cursor: pointer;
     padding: 18px;
     border: none;
@@ -679,7 +687,7 @@ nav>ul>li a:hover i {
 div.panel {
     padding: 0 18px;
     background-color: #fff;
-    color: #1a936f;
+    color: #1A916E;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
