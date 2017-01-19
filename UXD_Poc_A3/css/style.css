@@ -1,6 +1,3 @@
-/*Christos_Koutsiaris_BScHn16B_S_UXRD__A2_Ethical_Eaters_STU-00001219-30-12-2016*/
-
-
 /*-----------------------------------------------------------------------------------*/
 
 
@@ -201,6 +198,10 @@ h1 {
 
 .hide-on-small {
     display: none;
+}
+
+.reset-min-height {
+    min-height: 0 !important;
 }
 
 
@@ -405,7 +406,7 @@ hr {
 .general-boxes {
     padding: 1%;
     text-align: center;
-    min-height: 220px;
+    min-height: 232px;
 }
 
 .calculator-boxes {
@@ -451,7 +452,7 @@ hr {
 }
 
 .css-img {
-    background-image: url(../assets/images/sky305.jpg);
+    background-image: url(../assets/images/sky306.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -470,6 +471,10 @@ hr {
 
 .text-align-left {
     text-align: start;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 .min-height-260 {

@@ -1,5 +1,3 @@
-// Christos_Koutsiaris_BScHn16B_S_UXRD__A2_Ethical_Eaters_STU-00001219-30-12-2016
-
 function openNav() {
     document.getElementById("side-drawer").style.width = "66%";
 }
