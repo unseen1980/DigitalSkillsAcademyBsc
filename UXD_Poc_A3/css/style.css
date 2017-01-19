@@ -354,7 +354,6 @@ hr {
 .homepage-article-boxes {
     background-color: #fff;
     padding: 10px;
-    margin: 5px;
     min-height: 185px;
 }
 
@@ -415,7 +414,6 @@ hr {
 
 .mission-boxes {
     padding: 1%;
-    text-align: center;
 }
 
 .calculator-boxes {
@@ -532,7 +530,8 @@ hr {
 
 nav {
     display: inline-block;
-    float: right
+    float: right;
+    margin-right: 10px;
 }
 
 nav>ul {
@@ -780,6 +779,7 @@ div.panel {
     }
     .show-nav {
         display: block;
+        padding-top: 20px;
     }
     .burger {
         display: none;
