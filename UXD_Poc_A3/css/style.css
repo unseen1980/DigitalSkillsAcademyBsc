@@ -200,6 +200,10 @@ h1 {
     display: none;
 }
 
+.hide-mission {
+    display: none;
+}
+
 .reset-min-height {
     min-height: 0 !important;
 }
@@ -407,6 +411,11 @@ hr {
     padding: 1%;
     text-align: center;
     min-height: 232px;
+}
+
+.mission-boxes {
+    padding: 1%;
+    text-align: center;
 }
 
 .calculator-boxes {
@@ -723,9 +732,15 @@ div.panel {
         left: 0;
         width: 96%;
     }
+    .hide-mission {
+        display: none;
+    }
 }
 
 @media (min-width: 401px) {
+    .hide-mission {
+        display: none;
+    }
     .font-adapt {
         font-size: 14px;
     }
@@ -745,6 +760,9 @@ div.panel {
 }
 
 @media (min-width: 550px) {
+    .hide-mission {
+        display: none;
+    }
     .font-adapt {
         font-size: 14px;
     }
@@ -754,6 +772,9 @@ div.panel {
 }
 
 @media (min-width: 992px) {
+    .hide-mission {
+        display: inline;
+    }
     .font-adapt {
         font-size: 21px;
     }
