@@ -61,10 +61,10 @@
 
 .gradient-green-bg {
     background: #1A916E;
-    background: -webkit-linear-gradient(#1A916E, #88D498);
-    background: -o-linear-gradient(#1A916E, #88D498);
-    background: -moz-linear-gradient(#1A916E, #88D498);
-    background: linear-gradient(#1A916E, #88D498);
+    background: -webkit-linear-gradient(#114b5f, #1A916E);
+    background: -o-linear-gradient(#114b5f, #1A916E);
+    background: -moz-linear-gradient(#114b5f, #1A916E);
+    background: linear-gradient(#114b5f, #1A916E);
 }
 
 
@@ -210,6 +210,10 @@ h1 {
 
 .reset-min-height {
     min-height: 0 !important;
+}
+
+.big-top-margin {
+    margin-top: 20%;
 }
 
 
@@ -470,7 +474,7 @@ hr {
 }
 
 .login-register-background {
-    background-image: url(../assets/images/login_back_3.jpg);
+    background-image: url(../assets/images/login_back_3a.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -497,6 +501,10 @@ hr {
 
 .min-height-260 {
     min-height: 260px;
+}
+
+.reset-margin-bottom {
+    margin-bottom: 0;
 }
 
 
@@ -803,20 +811,21 @@ div.panel-home {
     font-weight: 100;
     text-align: center;
     font-size: 30px;
+    width: 100%;
 }
 
 #clockdiv>div {
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
+    background: #88d498;
     display: inline-block;
 }
 
 #clockdiv div>span {
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
+    background: #1A916E;
     display: inline-block;
 }
 
