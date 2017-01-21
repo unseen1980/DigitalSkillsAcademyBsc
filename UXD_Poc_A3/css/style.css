@@ -67,6 +67,14 @@
     background: linear-gradient(#114b5f, #c6dabf);
 }
 
+.gradient-blue-bottom {
+    background: #88d498;
+    background: -webkit-linear-gradient(#88d498, #114b5f);
+    background: -o-linear-gradient(#88d498, #114b5f);
+    background: -moz-linear-gradient(#88d498, #114b5f);
+    background: linear-gradient(#88d498, #114b5f);
+}
+
 
 /* End of Brand Colors*/
 
