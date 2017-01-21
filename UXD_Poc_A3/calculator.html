@@ -76,7 +76,7 @@
                         <div class="row">
                             <div class="twelve  white-bg calculator-boxes box-shadow  border5px bottom-gap">
                                 <h2>Value of Food Tracker</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, itaque consequatur nisi. Assumenda dolorum perspiciatis in ipsum hic vero facilis aut sint natus, eos dolorem quae blanditiis tempore, doloribus veritatis.</p>
+                                <p>The Food Tracker is a way for you to select the food you eat and see how much carbon is emitted into the atmosphere and how much water is used during production. But that’s not all! Use the Food Tracker regularly and you.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -87,7 +87,21 @@
                                     </div>
                                     <div class="eight ">
                                         <h2>Recipe of the day</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatesi.</p>
+                                        <ul>
+                                            <li>4 flour tortillas (10 inch)</li>
+                                            <li>1 teaspoon ground cumin</li>
+                                            <li>4 small leaves lettuce</li>
+                                            <li>1 medium red bell pepper, cut into thin strips</li>
+                                            <li>2 oz pepper Jack cheese, shredded (1/2 cup)
+                                            </li>
+                                        </ul>
+
+                                        <p>
+
+                                            Heat tortillas as directed on package. Meanwhile, in small bowl, mix cream cheese, cumin and salt until blended. On each tortilla, spread 2 tablespoons cream cheese mixture. Layer remaining ingredients evenly over half of each tortilla. Tuck in sides
+                                            of tortillas; roll up tightly to enclose filling
+
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -96,15 +110,6 @@
                             <div class="twelve  white-bg calculator-boxes box-shadow  border5px bottom-gap">
                                 <h2 class="bottom-gap">Share your achievements</h2>
                                 <div class="row">
-                                    <!--<div class="four  box-shadow vertical-align">
-                                        <img class="image-responsive" src="assets/images/facebook_logo.png" alt="">
-                                    </div>
-                                    <div class="four  box-shadow vertical-align">
-                                        <img class="image-responsive" src="assets/images/google-plus-logo.png" alt="">
-                                    </div>
-                                    <div class="four  box-shadow vertical-align">
-                                        <img class="image-responsive" src="assets/images/twitter-logo.png" alt="">
-                                    </div>-->
                                     <div class="twelve">
                                         <a href="#"><i class="social-icons max-green fa fa-facebook fa-3x" aria-hidden="true"></i></a>
                                         <a href="#"><i class="social-icons max-green fa fa-twitter fa-3x" aria-hidden="true"></i></a>
@@ -118,38 +123,43 @@
                     <div class="six ">
                         <div class="white-bg max-green padding2pc border5px box-shadow">
                             <h2>Did you submit today?</h2>
-                            <form>
-                                <label>Meat</label>
+                            <form onsubmit="return false;">
+                                <label class="font21">Meat</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Beef</option>
-                                    <option value="Option 2">Chicken</option>
-                                    <option value="Option 3">Pork</option>
+                                    <option value="" disabled selected>Had meat today?</option>
+                                    <option value="Option 1">Beef 150gr</option>
+                                    <option value="Option 2">Chicken 150gr</option>
+                                    <option value="Option 3">Pork 150gr</option>
                                 </select>
-                                <label>Carbs</label>
+                                <label class="font21">Carbs</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Rice</option>
-                                    <option value="Option 2">Pasta</option>
-                                     <option value="Option 3">Bread</option>
+                                    <option value="" disabled selected>Carbs in your plate?</option>
+                                    <option value="Option 1">Rice 80gr</option>
+                                    <option value="Option 2">Pasta 80gr</option>
+                                    <option value="Option 3">Bread 100gr</option>
                                 </select>
-                                <label>Dairy products</label>
+                                <label class="font21">Dairy products</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Yellow cheese</option>
-                                    <option value="Option 2">Milk 5%</option>
-                                    <option value="Option 3">Yoghurt</option>
+                                    <option value="" disabled selected>Had dairy today?</option>
+                                    <option value="Option 1">Yellow cheese 50gr</option>
+                                    <option value="Option 2">Milk 5% 250ml</option>
+                                    <option value="Option 3">Yoghurt 200gr</option>
                                 </select>
-                                <label>Fish</label>
+                                <label class="font21">Fish</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Tuna</option>
-                                    <option value="Option 2">Swordfish</option>
-                                    <option value="Option 3">Cod</option>
+                                    <option value="" disabled selected>Had fish today?</option>
+                                    <option value="Option 1">Tuna 200gr</option>
+                                    <option value="Option 2">Swordfish 200gr</option>
+                                    <option value="Option 3">Cod 200gr</option>
                                 </select>
-                                <label>Fruits - Vegetables</label>
+                                <label class="font21">Fruits</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Apple</option>
-                                    <option value="Option 2">Banana</option>
-                                    <option value="Option 3">Grapes</option>
+                                    <option value="" disabled selected>Had fruits today?</option>
+                                    <option value="Option 1">Apple x1</option>
+                                    <option value="Option 2">Banana x1</option>
+                                    <option value="Option 3">Grapes x10</option>
                                 </select>
-                                <button class="button-primary hvr-sweep-to-right" type="submit">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
+                                <button id="submit-results" class="button-primary hvr-sweep-to-right font16 button-full-width">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
                             </form>
                         </div>
                     </div>

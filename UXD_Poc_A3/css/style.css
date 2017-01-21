@@ -61,10 +61,10 @@
 
 .gradient-green-bg {
     background: #1A916E;
-    background: -webkit-linear-gradient(#114b5f, #1A916E);
-    background: -o-linear-gradient(#114b5f, #1A916E);
-    background: -moz-linear-gradient(#114b5f, #1A916E);
-    background: linear-gradient(#114b5f, #1A916E);
+    background: -webkit-linear-gradient(#114b5f, #c6dabf);
+    background: -o-linear-gradient(#114b5f, #c6dabf);
+    background: -moz-linear-gradient(#114b5f, #c6dabf);
+    background: linear-gradient(#114b5f, #c6dabf);
 }
 
 
@@ -216,6 +216,10 @@ h1 {
     margin-top: 20%;
 }
 
+.font16 {
+    font-size: 16px;
+}
+
 
 /*End of helper classes*/
 
@@ -234,11 +238,11 @@ input[type="button"] {
     padding: 0 30px;
     color: #555;
     text-align: center;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 38px;
     letter-spacing: .1rem;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
@@ -347,14 +351,6 @@ hr {
     box-sizing: border-box;
 }
 
-.info {
-    text-align: center;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .border5px {
     border-radius: 5px;
 }
@@ -368,7 +364,6 @@ hr {
 .homepage-celebity-boxes {
     text-align: center;
     margin: 5px;
-    font-style: italic;
 }
 
 .homepage-celebity-boxes>img {
@@ -481,7 +476,13 @@ hr {
 }
 
 .moto {
-    width: 400px;
+    display: none;
+    width: 45%;
+    font-size: 24px;
+}
+
+.moto>em {
+    font-size: 16px;
 }
 
 .news-article-boxes {
@@ -505,6 +506,10 @@ hr {
 
 .reset-margin-bottom {
     margin-bottom: 0;
+}
+
+.button-full-width {
+    width: 100%;
 }
 
 
@@ -555,6 +560,69 @@ hr {
 .hvr-sweep-to-right:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.wrapper {
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 90;
+}
+
+.ribbon-wrapper-green {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.ribbon-green {
+    font: bold 15px Sans-Serif;
+    color: #333;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: #88d498;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#88d498), to(#88d498));
+    background-image: -webkit-linear-gradient(top, #88d498, #88d498);
+    background-image: -moz-linear-gradient(top, #88d498, #88d498);
+    background-image: -ms-linear-gradient(top, #88d498, #88d498);
+    background-image: -o-linear-gradient(top, #88d498, #88d498);
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-green:before,
+.ribbon-green:after {
+    content: "";
+    border-top: 3px solid #6e8900;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px;
+}
+
+.ribbon-green:before {
+    left: 0;
+}
+
+.ribbon-green:after {
+    right: 0;
 }
 
 
@@ -810,13 +878,13 @@ div.panel-home {
     display: inline-block;
     font-weight: 100;
     text-align: center;
-    font-size: 30px;
+    font-size: 21px;
     width: 100%;
 }
 
 #clockdiv>div {
     width: calc(100% / 5);
-    padding: 10px;
+    padding: 5px;
     border-radius: 3px;
     background: #88d498;
     display: inline-block;
@@ -844,6 +912,9 @@ div.panel-home {
 /*Media Queries*/
 
 @media (min-width: 320px) {
+    #clockdiv {
+        font-size: 14px;
+    }
     .font-adapt {
         font-size: 14px;
     }
@@ -859,9 +930,30 @@ div.panel-home {
     .hide-mission {
         display: none;
     }
+    .show-on-small {
+        display: inline;
+        text-align: center;
+    }
+    .info {
+        display: none;
+    }
+    .margin-left-right {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .button-full-width {
+        width: 100%;
+    }
 }
 
 @media (min-width: 401px) {
+    #clockdiv {
+        font-size: 14px;
+    }
+    .margin-left-right {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     .hide-mission {
         display: none;
     }
@@ -881,9 +973,26 @@ div.panel-home {
         left: 0;
         width: 96%;
     }
+    .show-on-small {
+        display: inline;
+        text-align: center;
+    }
+    .info {
+        display: none;
+    }
+    .button-full-width {
+        width: 100%;
+    }
 }
 
 @media (min-width: 550px) {
+    #clockdiv {
+        font-size: 14px;
+    }
+    .margin-left-right {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     .hide-mission {
         display: none;
     }
@@ -893,9 +1002,38 @@ div.panel-home {
     .box {
         width: 80%;
     }
+    .show-on-small {
+        display: inline;
+        text-align: center;
+    }
+    .info {
+        display: none;
+    }
+    .button-full-width {
+        width: 100%;
+    }
 }
 
 @media (min-width: 992px) {
+    .button-full-width {
+        width: 33%;
+    }
+    #clockdiv {
+        font-size: 21px;
+    }
+    .margin-left-right {
+        margin: 0;
+    }
+    .info {
+        text-align: center;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .show-on-small {
+        display: none;
+    }
     .hide-mission {
         display: inline;
     }

@@ -12,6 +12,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <script src="libraries/vendors.js"></script>
     <script src="scripts/app.js"></script>
 </head>
@@ -59,51 +61,62 @@
         <article id="main">
             <section class="max-green-bg white padding4pc css-img min-height-150 info">
                 <h2 class="text-shadow-grey moto">The greatest threat to our planet is the belief that someone else will save it. <em>~Robert Swan</em></h2>
+                <h2 class="text-shadow-grey moto">Environmental pollution is an incurable disease. It can only be prevented.<em>~Barry Commoner</em></h2>
+                <h2 class="text-shadow-grey moto">Try to leave the Earth a better place than when you arrived.<em>~Sidney Sheldon</em></h2>
             </section>
 
             <section class="gradient-green-bg white padding2pc min-height-300">
                 <div class="row">
-                    <div class="six ">
+                    <div class="six hide-mission">
                         <h1 class="text-shadow-grey">Food Tracker <i class="fa fa-calculator" aria-hidden="true"></i></h1>
                         <h2 class="text-shadow-grey padding2pc-bottom">What did you eat today?</h2>
                         <h2 class="text-shadow-grey font-adapt">
                             The food we consume contributes to climate change.<span class="hide-mission">One person can save 1.5 tonnes of carbon emissions per year 
                             by switching their meat diet to vegan.</span> The food tracker will show you the resultant carbon footprint from the food you eat, called your ‘’Food Carbon Footprint’’
                     </div>
-                    <div class="six ">
+                    <div class="six show-on-small">
+                        <h1 class="text-shadow-grey">Food Tracker <i class="fa fa-calculator" aria-hidden="true"></i></h1>
+                        <h2 class="text-shadow-grey padding2pc-bottom">Your daily Food Carbon Footprint</h2>
+                    </div>
+                    <div class="six margin-left-right">
                         <div class="white-bg max-green padding2pc border5px box-shadow">
                             <form onsubmit="return false;">
                                 <label class="font21">Meat</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Beef</option>
-                                    <option value="Option 2">Chicken</option>
-                                    <option value="Option 3">Pork</option>
+                                    <option value="" disabled selected>Had meat today?</option>
+                                    <option value="Option 1">Beef 150gr</option>
+                                    <option value="Option 2">Chicken 150gr</option>
+                                    <option value="Option 3">Pork 150gr</option>
                                 </select>
                                 <label class="font21">Carbs</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Rice</option>
-                                    <option value="Option 2">Pasta</option>
-                                    <option value="Option 3">Bread</option>
+                                    <option value="" disabled selected>Carbs in your plate?</option>
+                                    <option value="Option 1">Rice 80gr</option>
+                                    <option value="Option 2">Pasta 80gr</option>
+                                    <option value="Option 3">Bread 100gr</option>
                                 </select>
                                 <label class="font21">Dairy products</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Yellow cheese</option>
-                                    <option value="Option 2">Milk 5%</option>
-                                    <option value="Option 3">Yoghurt</option>
+                                    <option value="" disabled selected>Had dairy today?</option>
+                                    <option value="Option 1">Yellow cheese 50gr</option>
+                                    <option value="Option 2">Milk 5% 250ml</option>
+                                    <option value="Option 3">Yoghurt 200gr</option>
                                 </select>
                                 <label class="font21">Fish</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Tuna</option>
-                                    <option value="Option 2">Swordfish</option>
-                                    <option value="Option 3">Cod</option>
+                                    <option value="" disabled selected>Had fish today?</option>
+                                    <option value="Option 1">Tuna 200gr</option>
+                                    <option value="Option 2">Swordfish 200gr</option>
+                                    <option value="Option 3">Cod 200gr</option>
                                 </select>
-                                <label class="font21">Fruits - Vegetables</label>
+                                <label class="font21">Fruits</label>
                                 <select class="u-full-width">
-                                    <option value="Option 1">Apple</option>
-                                    <option value="Option 2">Banana</option>
-                                    <option value="Option 3">Grapes</option>
+                                    <option value="" disabled selected>Had fruits today?</option>
+                                    <option value="Option 1">Apple x1</option>
+                                    <option value="Option 2">Banana x1</option>
+                                    <option value="Option 3">Grapes x10</option>
                                 </select>
-                                <button id="submit-results" class="button-primary hvr-sweep-to-right">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
+                                <button id="submit-results" class="button-primary hvr-sweep-to-right font16 button-full-width">Submit <i class="fa fa-forward" aria-hidden="true"></i></button>
                             </form>
                         </div>
                     </div>
@@ -183,28 +196,28 @@
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="assets/images/clinton.jpg" alt="">
-                            <p>"All my blood tests are good, and my vital signs are good, and I feel good, and I also have, believe it or not, more energy."</p>
+                            <p>"All my blood tests are good, and my vital signs are good, Food tracker helped me, believe it or not."</p>
                             <h3>B.Clinton</h3>
                         </article>
                     </div>
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="assets/images/portman.jpg" alt="">
-                            <p>"The human cost of factory farming is staggering."</p>
+                            <p>"The human cost of factory farming is staggering. Food tracker is part of the solution."</p>
                             <h3>N.Portman</h3>
                         </article>
                     </div>
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="assets/images/lewis.jpg" alt="">
-                            <p>"Went vegan after meeting two people, a doctor and a nutritionist, that inspired me to switch my diet."</p>
+                            <p>"After meeting two people, a doctor and a nutritionist, they inspired me to use Food tracker."</p>
                             <h3>C.Lewis</h3>
                         </article>
                     </div>
                     <div class="three ">
                         <article class="homepage-celebity-boxes border5px">
                             <img src="assets/images/ellen.jpg" alt="">
-                            <p>"I do it because I love animals, and I saw the reality and I just couldn’t ignore it anymore."</p>
+                            <p>"I use Food tracker because I saw the reality and I just couldn’t ignore it anymore."</p>
                             <h3>E.DeGeneres</h3>
                         </article>
                     </div>
@@ -299,39 +312,63 @@
                     <h3>Environmental friendly products</h3>
                 </div>
                 <div class="row">
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/bananas.jpg" alt="">
-                        <h3>Bananas 1kg Canary Islands 3.99$</h3>
+                        <h3>Bananas 1kg Spain 3.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/coffee.jpg" alt="">
                         <h3>Coffee 0.5kg Lesotho 12.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/flour.jpg" alt="">
                         <h3>Flour 2kf Armenia 2.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/mango.jpg" alt="">
                         <h3>Mango 1piece Portugal 1.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/pasta.jpg" alt="">
                         <h3>Pasta 1kg Sicily 3.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/plates.jpg" alt="">
                         <h3>Leaf plates x 20 Germany 10.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/shoes.jpg" alt="">
                         <h3>Cannabis shoes France 39.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
-                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap">
+                    <div class="three  white-bg general-boxes box-shadow  border5px bottom-gap wrapper">
                         <img src="assets/images/products/tofu.jpg" alt="">
                         <h3>Tofu 1kg Bangalore 3.99$</h3>
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Soon</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -394,7 +431,7 @@
                     </div>
                     <div class="four  white-bg border5px mission-boxes box-shadow  bottom-gap text-align-left">
                         <div class="accordion accordion-home">
-                            <h2 class="">Contact us<i class="fa fa-caret-down u-pull-right" aria-hidden="true"></i></h2>
+                            <h2 class="">Contact<i class="fa fa-caret-down u-pull-right" aria-hidden="true"></i></h2>
                         </div>
                         <div class="panel-home">
                             <form>
