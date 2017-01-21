@@ -55,7 +55,7 @@ Both are bundled into vendors.js to minimize requests
 
 ####Demo
 
-1. Hosted in DSA. [Link](site232.digitalskillsacademy.me/ethical-eaters)
+1. Hosted in DSA. [Link](http://site232.digitalskillsacademy.me/ethical-eaters)
 
 ####Repository
 
