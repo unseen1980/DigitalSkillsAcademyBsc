@@ -62,6 +62,7 @@ Both are bundled into vendors.js to minimize requests
 1. [Github] (https://github.com/unseen1980/DigitalSkillsAcademyBsc/tree/master/UXD_Poc_A3)
 2. [Github commits] (https://github.com/unseen1980/DigitalSkillsAcademyBsc/commits/master)
 
+### License
 
-
+The content of this project is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
 
