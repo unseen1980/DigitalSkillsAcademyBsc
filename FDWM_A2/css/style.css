@@ -449,6 +449,9 @@
             width: 33%;
             margin-right: 2%;
         }
+    }
+    
+    @media(max-width: 991px) {
         .breadcrumb {
             padding: 5px 15px;
         }
