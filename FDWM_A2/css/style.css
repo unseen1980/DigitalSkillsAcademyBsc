@@ -456,8 +456,8 @@
             padding: 5px 15px;
         }
         .breadcrumb>li {
-            padding-left: 8px;
-            padding-right: 8px;
+            padding-left: 4px;
+            padding-right: 4px;
         }
         .breadcrumb-mobile-style>a {
             color: #fff !important;
