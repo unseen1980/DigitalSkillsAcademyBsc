@@ -108,6 +108,11 @@
         padding-right: 50px;
     }
     
+    .negative-margin {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
     .popover-list-style {
         list-style-type: none;
         padding-left: 0;
@@ -400,7 +405,14 @@
         background-color: #00456E;
     }
     
+    .adjust-left-padding {
+        padding-left: 0;
+    }
+    
     @media(max-width: 768px) {
+        .padding30r {
+            padding-right: 0 !important;
+        }
         .navbar-nav {
             margin: 10px;
             padding-left: 10px;
@@ -451,13 +463,26 @@
         }
     }
     
+    @media (min-width: 769px) and (max-width: 991px) {
+        .adjust-left-padding {
+            padding-left: 30px;
+        }
+        .adjust-news {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .extra-margin-news-btn {
+            margin-left: 15px;
+        }
+    }
+    
     @media(max-width: 991px) {
         .breadcrumb {
             padding: 5px 15px;
         }
         .breadcrumb>li {
-            padding-left: 4px;
-            padding-right: 4px;
+            padding-left: 6px;
+            padding-right: 6px;
         }
         .breadcrumb-mobile-style>a {
             color: #fff !important;
@@ -471,6 +496,10 @@
     }
     
     @media (min-width: 992px) {
+        .negative-margin {
+            margin-left: 0;
+            margin-right: 0;
+        }
         .comments {
             padding-top: 34%
         }
@@ -486,6 +515,12 @@
         }
         .remove-left-padding {
             padding-left: 0;
+        }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1260px) {
+        .extra-padding-news {
+            padding-left: 15px;
         }
     }
     
