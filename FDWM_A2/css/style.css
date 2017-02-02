@@ -112,6 +112,10 @@
         padding-bottom: 10px;
     }
     
+    .padding5b {
+        padding-bottom: 5px;
+    }
+    
     .center-text {
         text-align: center;
     }
@@ -179,7 +183,7 @@
         box-sizing: content-box;
         background-color: transparent;
         text-align: center;
-        margin-right: 5px;
+        margin-right: 10px;
         margin-left: -3px;
     }
     
@@ -197,6 +201,7 @@
         padding-right: 0;
         margin-bottom: -5px;
         position: relative;
+        min-width: 70%;
     }
     
     .home-icon {
@@ -523,6 +528,13 @@
             float: left;
             width: 33%;
             margin-right: 2%;
+        }
+    }
+    
+    @media(max-width: 769px) {
+        .reset-paddings {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
     
