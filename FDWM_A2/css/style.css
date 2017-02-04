@@ -88,6 +88,10 @@
         padding-top: 10px;
     }
     
+    .padding15 {
+        padding: 15px;
+    }
+    
     .padding20t {
         padding-top: 20px;
     }
@@ -110,6 +114,10 @@
     
     .padding-right {
         padding-right: 50px;
+    }
+    
+    .padding15b {
+        padding-bottom: 15px;
     }
     
     .padding10b {
@@ -431,6 +439,15 @@
         padding-left: 0;
     }
     
+    .adjust-right-padding {
+        padding-right: 30px;
+    }
+    
+    .adjust-padding-depth {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
     .all {
         display: inline-block;
         position: absolute;
@@ -507,7 +524,33 @@
         vertical-align: middle;
     }
     
+    .background-clip {
+        background-clip: content-box;
+    }
+    
+    .news-min-height {
+        min-height: 270px;
+    }
+    
+    .set-display {
+        display: flex;
+    }
+    
+    @media(min-width: 768px) {
+        .adjust-left-padding {
+            padding-left: 30px;
+        }
+    }
+    
     @media(max-width: 768px) {
+        .caption>h4 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .adjust-padding-depth {
+            padding-left: 0;
+            padding-right: 0;
+        }
         .padding30r {
             padding-right: 0 !important;
         }
@@ -551,17 +594,18 @@
             margin-right: 0;
         }
         .thumbnail {
-            min-height: 103px;
+            min-height: 70px;
             overflow: overlay;
-        }
-        .thumbnail>img {
-            float: left;
-            width: 33%;
-            margin-right: 2%;
         }
     }
     
     @media(max-width: 769px) {
+        .news-min-height {
+            min-height: 70px;
+        }
+        .adjust-right-padding {
+            padding-right: 0px;
+        }
         .reset-paddings {
             padding-left: 0;
             padding-right: 0;
@@ -569,12 +613,9 @@
     }
     
     @media (min-width: 769px) and (max-width: 991px) {
-        .adjust-left-padding {
-            padding-left: 30px;
-        }
-        .adjust-news {
-            padding-left: 0;
-            padding-right: 0;
+        .thumbnail {
+            min-height: 110px;
+            overflow: overlay;
         }
         .extra-margin-news-btn {
             margin-left: 15px;
@@ -582,6 +623,12 @@
     }
     
     @media(max-width: 991px) {
+        .set-display {
+            display: block;
+        }
+        .news-min-height {
+            min-height: 70px;
+        }
         .right-border:after {
             width: 0;
         }
@@ -618,7 +665,8 @@
             margin-right: 0;
         }
         .comments {
-            padding-top: 34%
+            position: absolute;
+            bottom: -50px;
         }
         .panel {
             margin-bottom: 10px;
@@ -650,7 +698,8 @@
             font-size: 14px;
         }
         .comments {
-            padding-top: 36%
+            position: absolute;
+            bottom: -50px;
         }
         .extra-padding {
             padding-left: 15px;
