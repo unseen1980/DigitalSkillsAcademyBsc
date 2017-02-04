@@ -100,8 +100,32 @@ h4 {
     position: relative
 }
 
+.up-icon {
+    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+    float: left;
+    height: 4.125rem;
+    width: 4.125rem;
+    text-align: center;
+    line-height: 3;
+    margin: 5px;
+}
+
+.up-info {
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+
 .inline-icon {
     fill: #ffffff;
+}
+
+.inline-icon svg {
+    overflow: visible;
+}
+
+.brand-bar {
+    background-color: #005689;
 }
 
 .separator {
@@ -140,6 +164,10 @@ h4 {
     padding-right: 0;
     position: relative;
     min-width: 70%;
+}
+
+.container-fluid {
+    background: #1a6795;
 }
 
 .home-icon {

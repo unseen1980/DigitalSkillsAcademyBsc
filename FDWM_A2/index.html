@@ -34,7 +34,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" id="top">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6 visible-xs-block padding5t padding5b">
@@ -506,38 +506,56 @@
                 </div>
             </div>
         </section>
-        <section class="container ">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <ul class="nav nav-tabs hidden-xs hidden-sm">
-                        <li role="presentation" class="padding10l"><a href="#"><span class="home-icon"></span></a></li>
-                        <li role="presentation"><a href="#">UK</a></li>
-                        <li role="presentation"><a href="#">world</a></li>
-                        <li role="presentation"><a href="#">sport</a></li>
-                        <li role="presentation"><a href="#">football</a></li>
-                        <li role="presentation"><a href="#">opinion</a></li>
-                        <li role="presentation"><a href="#">culture</a></li>
-                        <li role="presentation"><a href="#">business</a></li>
-                        <li role="presentation"><a href="#">lifestyle</a></li>
-                        <li role="presentation"><a href="#">fashion</a></li>
-                        <li role="presentation"><a href="#">environment</a></li>
-                        <li role="presentation"><a href="#">tech</a></li>
-                        <li role="presentation"><a href="#">travel</a></li>
-                        <li role="presentation" class="last-nav-tab hidden-xs">
-                            <a href="#">
-                                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                                <span class="hidden-xs hidden-sm hidden-md">browse all sections</span>
-                                <span class="hidden-lg">all</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+
+        <section class="container-fluid">
+            <div class="container brand-bar">
+                <a href="#top">
+                    <span class="rounded-icon up-icon">
+                        <span class="inline-arrow-up inline-icon ">
+                            <svg width="24" height="18" viewBox="0 0 24 18" class="inline-arrow-up__svg inline-icon__svg">
+                            <path d="M.4 15.3l10.5-8.4L12 6l1.1.9 10.5 8.4-.5.7L12 9.7.9 16l-.5-.7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="up-info">back to top</span>
+                </a>
+
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <ul class="nav nav-tabs hidden-xs hidden-sm">
+                            <li role="presentation" class="padding10l"><a href="#"><span class="home-icon"></span></a></li>
+                            <li role="presentation"><a href="#">UK</a></li>
+                            <li role="presentation"><a href="#">world</a></li>
+                            <li role="presentation"><a href="#">sport</a></li>
+                            <li role="presentation"><a href="#">football</a></li>
+                            <li role="presentation"><a href="#">opinion</a></li>
+                            <li role="presentation"><a href="#">culture</a></li>
+                            <li role="presentation"><a href="#">business</a></li>
+                            <li role="presentation"><a href="#">lifestyle</a></li>
+                            <li role="presentation"><a href="#">fashion</a></li>
+                            <li role="presentation"><a href="#">environment</a></li>
+                            <li role="presentation"><a href="#">tech</a></li>
+                            <li role="presentation"><a href="#">travel</a></li>
+                            <li role="presentation" class="last-nav-tab hidden-xs">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                                    <span class="hidden-xs hidden-sm hidden-md">browse all sections</span>
+                                    <span class="hidden-lg">all</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </section>
+        </div>
         <footer class="footer news-color">
             <div class="container padding15">
                 <div class="row padding15">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-8">
+                        <label for="exampleInputEmail1">Signup to our daily email</label>
                         <div class="input-group">
                             <input id="exampleInputEmail1" placeholder="Newsletter signup" type="email" class="news-input form-control">
                             <span class="input-group-btn">
@@ -545,6 +563,12 @@
                             </span>
                         </div>
                     </div>
+                    <div class="row hidden-sm hidden-md">
+                        <div class="col-xs-12">
+                            <hr>
+                        </div>
+                    </div>
+
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <ol>
                             <li>facebook</li>
@@ -568,9 +592,9 @@
                         </ol>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row padding15">
                     <hr>
-                    <div class="padding15 col-lg-12">© 2017 Guardian News and Media Limited or its affiliated companies. All&nbsp;rights&nbsp;reserved.</div>
+                    <div class=" col-lg-12">© 2017 Guardian News and Media Limited or its affiliated companies. All&nbsp;rights&nbsp;reserved.</div>
                 </div>
             </div>
         </footer>
