@@ -572,6 +572,10 @@ footer ol {
     font-size: 21px;
 }
 
+.full-width {
+    width: 100% !important;
+}
+
 
 /*End of helper classes*/
 
