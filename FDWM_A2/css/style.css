@@ -332,7 +332,7 @@ ul.nav-tabs>li {
     background: #dfdfdf;
     position: absolute;
     right: 0;
-    height: 280px;
+    height: 275px;
     width: 1px;
     top: 0;
 }
@@ -507,6 +507,10 @@ footer ol {
     padding-left: 15px;
 }
 
+.padding15r {
+    padding-right: 15px;
+}
+
 .padding10l {
     padding-left: 10px;
 }
@@ -667,6 +671,12 @@ footer ol {
     .panel-body {
         padding: 14px;
         font-size: 14px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1140px;
     }
 }
 
