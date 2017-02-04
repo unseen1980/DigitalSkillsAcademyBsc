@@ -100,6 +100,10 @@
         padding-left: 10px;
     }
     
+    .padding15r {
+        padding-right: 15px !important;
+    }
+    
     .padding30r {
         padding-right: 30px !important;
     }
@@ -475,6 +479,32 @@
         height: 272px;
         width: 1px;
         top: 0;
+    }
+    
+    .right-border-opinion {
+        position: relative
+    }
+    
+    .right-border-opinion:after {
+        content: "";
+        background: #dfdfdf;
+        position: absolute;
+        right: 0;
+        height: 256px;
+        width: 1px;
+        top: 0;
+    }
+    
+    .media {
+        margin-bottom: 14px;
+    }
+    
+    .media-object {
+        width: 132px;
+    }
+    
+    .media-body {
+        vertical-align: middle;
     }
     
     @media(max-width: 768px) {
