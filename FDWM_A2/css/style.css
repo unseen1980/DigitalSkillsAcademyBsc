@@ -24,7 +24,10 @@
         width: 100%;
         color: #fff;
         background-color: #484848;
-        display: inline-flex;
+    }
+    
+    .navbar {
+        min-height: 0;
     }
     
     .white-background {
