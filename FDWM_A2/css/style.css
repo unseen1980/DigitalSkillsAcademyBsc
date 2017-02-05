@@ -499,7 +499,7 @@ ul.nav-tabs>li {
 
 .side-heading-bottom {
     position: absolute;
-    bottom: -430px;
+    bottom: -495px;
     left: 15px;
 }
 
@@ -605,6 +605,19 @@ footer ol {
     margin-left: 10px;
 }
 
+.tags {
+    background-color: #f1f1f1;
+    font-size: 12px;
+    padding: 5px !important;
+    border-radius: 25px !important;
+    color: #383333 !important;
+}
+
+.tags:hover {
+    color: #fff !important;
+    background-color: #005689 !important;
+}
+
 
 /*End of main classes*/
 
@@ -692,10 +705,6 @@ footer ol {
 
 .padding5b {
     padding-bottom: 5px;
-}
-
-.negative-margin-bottom {
-    margin-bottom: -5px !important;
 }
 
 .match-my-cols [class*="col-"] {
@@ -802,6 +811,9 @@ footer ol {
 }
 
 @media(max-width: 991px) {
+    .negative-margin-bottom {
+        margin-bottom: -5px !important;
+    }
     .side-heading-article {
         font-size: 16px;
         font-weight: 700;
