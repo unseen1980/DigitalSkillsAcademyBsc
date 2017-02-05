@@ -320,6 +320,10 @@ ul.nav-tabs>li {
     transition: border-color .15s ease-out;
 }
 
+.article-links:hover {
+    color: #005689 !important;
+}
+
 .pill {
     font-size: 12px;
     padding: 0 0.5rem;
