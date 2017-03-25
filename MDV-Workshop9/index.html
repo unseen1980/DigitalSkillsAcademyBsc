@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="jQuery-mobile/jquery.mobile-1.4.5.css">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="jQuery-mobile/jquery.mobile-1.4.5.js"></script>
+    <!--<script src="index.js"></script>-->
+</head>
+
+<body>
+    <div data-role="page" id="main">
+        <div data-role="content">
+            <div class="content-primary">
+                <div data-demo-html="true">
+                    <ul data-filter="true" data-filter-reveal="true" data-role="list-view">
+                        <li><a href="#angularjs" data-transition="slideup">AngularJS</a></li>
+                        <li><a href="#angular4" data-transition="slideup">Angular4</a></li>
+                        <li><a href="#react" data-transition="slideup">React</a></li>
+                        <li><a href="#vue" data-transition="slideup">Vue</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="angularjs">
+        <div data-role="header">
+            <h1>AngularJS - Superheroic framework</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>
+                HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive,
+                readable, and quick to develop.
+            </p>
+            <a href="#main" class="ui-btn">back</a>
+        </div>
+        <div data-role="footer">
+            <h4>Super-powered by Google ©2010-2017</h4>
+        </div>
+    </div>
+    <div data-role="page" id="angular4">
+        <div data-role="header">
+            <h1>Angular - One framework. Mobile & desktop.</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>
+                Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.
+            </p>
+            <a href="#main" class="ui-btn">back</a>
+        </div>
+        <div data-role="footer">
+            <h4>Powered by Google ©2010-2017</h4>
+        </div>
+    </div>
+    <div data-role="page" id="react">
+        <div data-role="header">
+            <h1>React - Javascript library for building user interfaces</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more
+                predictable and easier to debug.
+            </p>
+            <a href="#main" class="ui-btn">back</a>
+        </div>
+        <div data-role="footer">
+            <h4>Copyright © 2017 Facebook Inc.</h4>
+        </div>
+    </div>
+    <div data-role="page" id="vue">
+        <div data-role="header">
+            <h1>VueJS - The Progressive JavaScript Framework</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>
+                Simple, minimal core with an incrementally adoptable stack that can handle apps of any scale.
+            </p>
+            <a href="#main" class="ui-btn">back</a>
+        </div>
+        <div data-role="footer">
+            <h4>Copyright © 2014-2017 Evan You</h4>
+        </div>
+    </div>
+</body>
+
+</html>
