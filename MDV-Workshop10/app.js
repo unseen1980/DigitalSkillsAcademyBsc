@@ -22,7 +22,8 @@ $(document).ready(function() {
                     '</div>' +
                     '</div>';
 
-                $('#content-list').append('<li><a href=#' + id + '>' + catName + '</a></li>');
+                $('#content-list').append('<li><a data-transition="slideup" href=#' + id + '>' + catName + '</a></li>').listview().listview('refresh');
+
                 $('body').append(pageContent);
             });
         }
