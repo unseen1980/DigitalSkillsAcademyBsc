@@ -1,0 +1,10 @@
+.reset-margin {
+    margin: 0 !important;
+}
+
+.ui-listview>.ui-li-divider,
+.ui-header .ui-title,
+.ui-footer .ui-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
