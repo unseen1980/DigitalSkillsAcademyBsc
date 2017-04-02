@@ -17,7 +17,8 @@
 <body>
     <div data-role="page" id="main">
         <div data-role="header">
-            <h1>Holidays Finder</h1>
+            <h1>DSA Travel</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
         <div data-role="content">
             <div class="content-primary">
@@ -25,8 +26,21 @@
                 </ul>
             </div>
         </div>
-        <div data-role="footer">
-            <h1>Digital Skills Academy 2017</h1>
+
+        <div data-role="panel" data-display="push" id="nav-panel">
+
+            <ul data-role="listview">
+
+                <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+
+                <li><a href="#panel-responsive-page2">Help</a></li>
+
+                <li><a href="#panel-responsive-page2">Contact</a></li>
+            </ul>
+        </div>
+        <div id="container"></div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Digital Skills Travel 2017</h1>
         </div>
     </div>
 </body>
