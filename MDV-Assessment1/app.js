@@ -4,65 +4,113 @@ $(document).ready(function() {
             "Greece": [{
                     "name": "Athens",
                     "days": 5,
-                    "price": 200
+                    "price": 200,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Crete",
                     "days": 5,
-                    "price": 300
+                    "price": 300,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Corfu",
                     "days": 5,
-                    "price": 400
+                    "price": 400,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 }
             ],
             "Spain": [{
                     "name": "Madrid",
                     "days": 5,
-                    "price": 200
+                    "price": 200,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Valencia",
                     "days": 5,
-                    "price": 300
+                    "price": 300,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Majorca",
                     "days": 5,
-                    "price": 400
+                    "price": 400,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 }
             ],
             "Italy": [{
                     "name": "Rome",
                     "days": 5,
-                    "price": 200
+                    "price": 200,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Venice",
                     "days": 5,
-                    "price": 300
+                    "price": 300,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Milano",
                     "days": 5,
-                    "price": 400
+                    "price": 400,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 }
             ],
             "Portugal": [{
                     "name": "Lisbon",
                     "days": 5,
-                    "price": 200
+                    "price": 200,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Faro",
                     "days": 5,
-                    "price": 300
+                    "price": 300,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 },
                 {
                     "name": "Azores",
                     "days": 5,
-                    "price": 400
+                    "price": 400,
+                    "hotelName": "",
+                    "airline": "",
+                    "images": [],
+                    "desc": ""
                 }
             ]
         },
@@ -130,7 +178,19 @@ $(document).ready(function() {
                         keyCountry +
                         '"></ul></div>').collapsibleset().trigger('create');
                     packages[key][keyCountry].forEach(function(city) {
-                        $('#' + keyCountry).append('<li><a href="index.html">' + city.name + '</a></li>').listview().listview('refresh');
+                        $('#' + keyCountry).append('<li><a href="#' + city.name + '">' + city.name + '</a></li>').listview().listview('refresh');
+                        var pageContent = '<div data-role="page" id=' + city.name + '>' +
+                            '<div data-role="header">' +
+                            '<h1>' + city.name + '</h1>' +
+                            '</div>' +
+                            '<div role="main" class="ui-content">' +
+                            '<a href="#main" class="ui-btn">back</a>' +
+                            '</div>' +
+                            '<div data-role="footer">' +
+                            '<h4>Powered by Jquery Mobile</h4>' +
+                            '</div>' +
+                            '</div>';
+                        $('body').append(pageContent);
                     })
                 }
             }
