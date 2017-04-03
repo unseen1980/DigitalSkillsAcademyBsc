@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('http://site232.digitalskillsacademy.me/MDV-Assessment1/response.json')
+    $.getJSON('response.json')
         .done(function(data) {
             var packages = data,
                 packagesList = $('#packages-list');
@@ -22,7 +22,7 @@ $(document).ready(function() {
                                     '</div>' +
                                     '<div role="main" class="ui-content">' +
                                     '<img class="center-image" src="' + city.images[0] + '">' +
-                                    '<ul class="no-bullets">' +
+                                    '<div class="center-image"><ul class="no-bullets">' +
                                     '<li><b>Airline</b> - ' + city.airline + '</li>' +
                                     '<li><b>Hotel</b> - ' + city.hotelName + '</li>' +
                                     '<li><b>Departure</b> - ' + city.departure + '</li>' +
@@ -30,7 +30,7 @@ $(document).ready(function() {
                                     '<li><b>Price</b> - ' + city.price + '€</li></ul>' +
                                     '<p>' + city.desc + '</p>' +
                                     '<a data-transition="slide" data-direction="reverse" href="#main" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
-                                    '</div>' +
+                                    '</div></div>' +
                                     '<div data-role="footer" data-position="fixed">' +
                                     '<h4>Digital Skills Travel 2017</h4>' +
                                     '</div>' +
@@ -49,5 +49,4 @@ $(document).ready(function() {
                 }
             }).listview("refresh");
         });
-
 });

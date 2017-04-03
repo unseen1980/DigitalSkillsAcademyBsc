@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Europe holidays finder</title>
+    <title>Holidays finder</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <link rel="stylesheet" href="jQuery-mobile/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="jQuery-mobile/travel.css">
     <link href="style.css" rel="stylesheet">
-    <script src="jQuery-1.12.4.min.js"></script>
-    <script src="jQuery-mobile/jquery.mobile-1.4.5.min.js"></script>
-    <script src="app.js"></script>
 </head>
 
 <body>
@@ -28,14 +25,10 @@
         </div>
 
         <div data-role="panel" data-display="push" id="nav-panel">
-
             <ul data-role="listview">
-
                 <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
-
-                <li><a href="#panel-responsive-page2">Help</a></li>
-
-                <li><a href="#panel-responsive-page2">Contact</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div id="container"></div>
@@ -43,6 +36,60 @@
             <h1>Digital Skills Travel 2017</h1>
         </div>
     </div>
+    <div data-role="page" id="help">
+        <div data-role="header">
+            <h1>DSA Travel</h1>
+        </div>
+        <div data-role="content">
+            <div class="content-primary">
+                <div class="center-image">
+                    <h1>Passenger Rights and Legislation</h1>
+                    <p>
+                        Much of this information can be located in two documents. First is the Montreal Convention. It is a treaty, adopted by the United Nations’ International Civil Aviation Organization (ICAO) in 1999 that defines the liability of airlines in cases of accidents,
+                        injuries and loss of baggage. In Europe additional legislation exists in the form of the European Commission Regulation on Denied Boarding, Cancellations and Delays. Data Protection Data Protection: Specialist Holiday Group trading
+                        as American Holidays, Travelmood and Alfresco Holidays are committed to protecting your privacy and information. A copy of our privacy policy is available on request from 18-19 Duke Street, Dublin 2. The information that we use
+                        is for the purpose of fulfilling our contract as a tour operator/holiday provider. Information that you provide us will be held on our computers (and in other ways) for use by us for the following purposes: (a) booking information;
+                        (b) information about you (and your travelling party) may be passed to holiday providers and others and may include things such as age, religious beliefs, dietary requirements, you (or your travelling party's) physical or mental
+                        health. This information may also be transferred abroad. Outside the 'EEA' controls on data protection in such countries may not be as strong as the legal requirements inside the European Economic Area; (c) If you apply for insurance,
+                        then we may process information (including medical information) about you (or your travelling party) and pass it to the insurers; (d) Information supplied by you may be processed by us for Statistical Analysis and or Market Research
+                        and may in certain instances be disclosed to our agents for the purposes of fraud prevention and or debt collection; (e) To contact you via e-mail, letter or phone with details of American Holidays' or selected suppliers' products
+                        and services including financial services, which may be of interest to you. By entering into a contract with us you agree to the use and disclosure of information by Specialist Holiday Group as described. A copy of your personal
+                        information held by Specialist Holiday Group can be provided on request. You have the right to have any inaccurate personal information rectified or erased. Please note that airlines are required by new laws introduced in the US
+                        and other countries to give border control agencies access to passenger data. Accordingly any information we hold about you and your travel arrangements may be disclosed to the customs and immigration authorities of any country
+                        in your itinerary.
+                    </p>
+                    <a data-transition="slide" data-direction="reverse" href="#main" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Digital Skills Travel 2017</h1>
+        </div>
+    </div>
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>DSA Travel</h1>
+        </div>
+        <div data-role="content">
+            <div class="content-primary">
+                <iframe class="center-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.067427491551!2d-6.284614283690788!3d53.34204917997815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c3aeb04dbeb%3A0x4453d78cacd4b6a1!2sDigital+Skills+Academy!5e0!3m2!1sen!2sie!4v1491247669317"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="center-image">
+                    <h2>EMEA (including UK and Ireland)</h2>
+                    <p>Crane Street, The Digital Hub,&nbsp;Dublin 8, Ireland D08 R2YP&nbsp;</p>
+                    <p><strong>Dublin:</strong> +353 1 690 8090</p>
+                    <a data-transition="slide" data-direction="reverse" href="#main" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Digital Skills Travel 2017</h1>
+        </div>
+    </div>
 </body>
+
+<script src="jQuery-1.8.0.min.js"></script>
+<script src="jQuery-mobile/jquery.mobile-1.4.5.min.js"></script>
+<script src="app.js"></script>
 
 </html>
