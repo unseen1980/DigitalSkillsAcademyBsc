@@ -7,7 +7,7 @@ $(document).ready(function() {
                     $('#' + keyCountry).append('<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>').listview().listview('refresh');
                     var pageContent = '<div data-role="page" id=' + city.name + '>' +
                         '<div data-role="header">' +
-                        '<h1>' + city.name + '</h1><a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
+                        '<h1>' + city.name + '</h1><a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
                         '</div>' +
                         '<div role="main" class="ui-content">' +
                         '<img class="center-image" src="' + city.images[0] + '">' +
@@ -18,7 +18,7 @@ $(document).ready(function() {
                         '<li><b>Duration</b> - ' + city.nights + ' nights</li>' +
                         '<li><b>Price</b> - ' + city.price + '€pp</li></ul>' +
                         '<p>' + city.desc + '</p>' +
-                        '<a data-transition="slide" href="#book" class="ui-btn">Book</a>' +
+                        '<a data-transition="slide" href="#booking" class="ui-btn">Book</a>' +
                         '</div></div>' +
                         '<div data-role="footer" data-position="fixed">' +
                         '<h4>Digital Skills Travel 2017</h4>' +

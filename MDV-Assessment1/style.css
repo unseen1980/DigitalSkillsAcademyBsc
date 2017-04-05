@@ -20,8 +20,8 @@
     list-style-type: none;
 }
 
-a.ui-btn {
-    border-radius: 0 !important;
+.ui-listview>li h2 {
+    margin-bottom: 5px !important;
 }
 
 .ui-listview>li h2 {

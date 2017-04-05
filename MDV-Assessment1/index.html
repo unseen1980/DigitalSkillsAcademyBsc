@@ -39,6 +39,7 @@
     <div data-role="page" id="help">
         <div data-role="header">
             <h1>DSA Travel</h1>
+            <a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
         </div>
         <div data-role="content">
             <div class="content-primary">
@@ -58,7 +59,6 @@
                         and other countries to give border control agencies access to passenger data. Accordingly any information we hold about you and your travel arrangements may be disclosed to the customs and immigration authorities of any country
                         in your itinerary.
                     </p>
-                    <a data-transition="slide" data-direction="reverse" href="#main" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
                 </div>
             </div>
         </div>
@@ -69,6 +69,7 @@
     <div data-role="page" id="contact">
         <div data-role="header">
             <h1>DSA Travel</h1>
+            <a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
         </div>
         <div data-role="content">
             <div class="content-primary">
@@ -78,8 +79,55 @@
                     <h2>EMEA (including UK and Ireland)</h2>
                     <p>Crane Street, The Digital Hub,&nbsp;Dublin 8, Ireland D08 R2YP&nbsp;</p>
                     <p><strong>Dublin:</strong> +353 1 690 8090</p>
-                    <a data-transition="slide" data-direction="reverse" href="#main" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
                 </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Digital Skills Travel 2017</h1>
+        </div>
+    </div>
+    <div data-role="page" id="booking">
+        <div data-role="header">
+            <h1>DSA Travel</h1>
+            <a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
+        </div>
+        <div data-role="content">
+            <div class="content-primary">
+                <h3>Please enter your contact details</h3>
+                <form method="post" action="#pageone" data-ajax="false">
+                    <label for="firstName">First name</label>
+                    <input data-corners="false" type="text" name="firstName" id="firstName">
+                    <label for="lasttName">Last name</label>
+                    <input data-corners="false" type="text" name="lasttName" id="lasttName">
+                    <label for="email">Email</label>
+                    <input data-corners="false" type="email" id="email" name="email" />
+                    <label for="phone">Telephone</label>
+                    <input data-corners="false" type="tel" id="phone" name="phone" />
+                    <label for="info">Message:</label>
+                    <textarea data-corners="false" name="addinfo" id="info" placeholder="Any special requirements?"></textarea>
+                    <fieldset data-corners="false" data-role="controlgroup">
+                        <label for="newsletter">I agree to receive a monthly newsletter</label>
+                        <input type="checkbox" id="newsletter" value="newsletter">
+                        <label for="terms">I agree to terms and conditions</label>
+                        <input type="checkbox" id="terms" value="terms">
+                    </fieldset>
+                    <!--<input data-corners="false" type="submit" data-inline="true" value="Submit">-->
+                    <a href="#thanks" data-transition="slide" data-corners="false" class="ui-btn ui-icon-check ui-btn-icon-left">Submit</a>
+                </form>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Digital Skills Travel 2017</h1>
+        </div>
+    </div>
+    <div data-role="page" id="thanks">
+        <div data-role="header">
+            <h1>DSA Travel</h1>
+            <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-btn-icon-left">Home</a>
+        </div>
+        <div data-role="content">
+            <div class="content-primary">
+                <h3>A member of our team will contact you soon!</h3>
             </div>
         </div>
         <div data-role="footer" data-position="fixed">
