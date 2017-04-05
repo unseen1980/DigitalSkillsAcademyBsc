@@ -19,3 +19,11 @@
 .no-bullets {
     list-style-type: none;
 }
+
+a.ui-btn {
+    border-radius: 0 !important;
+}
+
+.ui-listview>li h2 {
+    margin: 0;
+}
