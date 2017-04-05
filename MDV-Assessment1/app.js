@@ -3,8 +3,31 @@ $(document).ready(function() {
         .done(function(data) {
             var packages = data,
                 packagesList = $('#packages-list'),
+                slideshow = $('.slideshow-container'),
+                slideIndex = 1,
+                plusSlides = function(n) {
+                    showSlides(slideIndex += n);
+                },
+                currentSlide = function(n) {
+                    showSlides(slideIndex = n);
+                },
+                nextSlide = function() {
+                    plusSlides(1);
+                },
+                timer = setInterval(nextSlide, 10000),
+                showSlides = function(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                },
                 pageCreation = function(city) {
                     $('#' + keyCountry).append('<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>').listview().listview('refresh');
+                    slideshow.append('<div class="mySlides fade"><a data-transition="slide" href="#' + city.name + '"><img src="' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + 'pp</div>')
                     var pageContent = '<div data-role="page" id=' + city.name + '>' +
                         '<div data-role="header">' +
                         '<h1>' + city.name + '</h1><a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
@@ -24,7 +47,22 @@ $(document).ready(function() {
                         '<h4>Digital Skills Travel 2017</h4>' +
                         '</div>' +
                         '</div>';
+
                     $('body').append(pageContent);
+
+                    showSlides(slideIndex);
+
+                    $('.prev').on('click', function() {
+                        plusSlides(-1);
+                        clearInterval(myTimer);
+                        timer = setInterval(nextSlide, 10000);
+                    });
+
+                    $('.next').on('click', function() {
+                        plusSlides(1);
+                        clearInterval(myTimer);
+                        timer = setInterval(nextSlide, 10000);
+                    });
                 };
 
             for (var key in packages) {

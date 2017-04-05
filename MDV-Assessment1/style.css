@@ -27,3 +27,97 @@
 .ui-listview>li h2 {
     margin: 0;
 }
+
+.ui-listview>.ui-li-static {
+    padding: 5px 5px 0 5px;
+}
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.ui-collapsible-content {
+    padding: 5px;
+}
+
+
+/*Slideshow*/
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+.slideshow-container {
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px;
+    margin-top: -22px;
+    color: #FFF !important;
+    font-weight: bold;
+    font-size: 21px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: #1e8adf;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text {
+    color: #FFF;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #337ab7;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
