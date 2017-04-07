@@ -27,7 +27,7 @@ $(document).ready(function() {
                 },
                 pageCreation = function(city) {
                     slides += '<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>';
-                    slideshow.append('<div class="mySlides"><a data-transition="slide" href="#' + city.name + '"><img src="assets/' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + 'pp</div>')
+                    slideshow.append('<div class="mySlides"><a data-transition="slide" href="#' + city.name + '"><img src="assets/' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + '€pp</div>')
                     pageContent += '<div data-role="page" id=' + city.name + '>' +
                         '<div data-role="header">' +
                         '<h1>' + city.name + '</h1><a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
