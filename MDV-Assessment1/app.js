@@ -2,7 +2,9 @@ $(document).ready(function() {
     $.getJSON('response.json')
         .done(function(data) {
             var packages = data,
+                pageContent = '',
                 packagesList = $('#packages-list'),
+                slides = '',
                 slideshow = $('.slideshow-container'),
                 slideIndex = 1,
                 plusSlides = function(n) {
@@ -26,9 +28,9 @@ $(document).ready(function() {
                     slides[slideIndex - 1].style.display = "block";
                 },
                 pageCreation = function(city) {
-                    $('#' + keyCountry).append('<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>').listview().listview('refresh');
+                    slides += '<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>';
                     slideshow.append('<div class="mySlides fade"><a data-transition="slide" href="#' + city.name + '"><img src="' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + 'pp</div>')
-                    var pageContent = '<div data-role="page" id=' + city.name + '>' +
+                    pageContent += '<div data-role="page" id=' + city.name + '>' +
                         '<div data-role="header">' +
                         '<h1>' + city.name + '</h1><a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
                         '</div>' +
@@ -47,22 +49,6 @@ $(document).ready(function() {
                         '<h4>Digital Skills Travel 2017</h4>' +
                         '</div>' +
                         '</div>';
-
-                    $('body').append(pageContent);
-
-                    showSlides(slideIndex);
-
-                    $('.prev').on('click', function() {
-                        plusSlides(-1);
-                        clearInterval(myTimer);
-                        timer = setInterval(nextSlide, 10000);
-                    });
-
-                    $('.next').on('click', function() {
-                        plusSlides(1);
-                        clearInterval(myTimer);
-                        timer = setInterval(nextSlide, 10000);
-                    });
                 };
 
             for (var key in packages) {
@@ -75,15 +61,31 @@ $(document).ready(function() {
                                 '"></ul></div>').collapsibleset().trigger('create');
                             packages[key][keyCountry].forEach(pageCreation);
                         }
+                        $('#' + keyCountry).append(slides).listview().listview('refresh');
                     }
                 }
             }
-
+            $('body').append(pageContent);
             packagesList.listview({
                 autodividers: true,
                 autodividersSelector: function(li) {
                     return li.attr('id');
                 }
             }).listview("refresh");
+
+            showSlides(slideIndex);
+
+            $('.prev').on('click', function() {
+                plusSlides(-1);
+                clearInterval(timer);
+                timer = setInterval(nextSlide, 10000);
+            });
+
+            $('.next').on('click', function() {
+                plusSlides(1);
+                clearInterval(timer);
+                timer = setInterval(nextSlide, 10000);
+            });
         });
+
 });
