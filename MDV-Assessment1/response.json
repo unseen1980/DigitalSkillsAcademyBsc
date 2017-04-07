@@ -66,6 +66,37 @@
         }]
     },
     "Europe": {
+        "Spain": [{
+                "airline": "Vueling",
+                "nights": 5,
+                "desc": "More than a decade after I fell for Madrid and decided to call it home, the life that courses relentlessly through the streets here still excites me. Here is a place where the passions of Europe’s most passionate country are the fabric of daily life, a city with music in its soul and an unshakeable spring in its step. ",
+                "hotelName": "Prado",
+                "images": ["Madrid-min.jpg"],
+                "name": "Madrid",
+                "price": 580,
+                "departure": "1st July 2017"
+            },
+            {
+                "airline": "Vueling",
+                "nights": 5,
+                "desc": "I love the sea, and taking an early-morning jog along the Mediterranean is my favourite way to start the day. I'm also a bit of a history nerd, and relish strolling the cobblestone lanes of the Gothic quarter, thinking about the people in past centuries who walked these streets. ",
+                "hotelName": "Gothic",
+                "images": ["Barcelona-min.jpg"],
+                "name": "Barcelona",
+                "price": 980,
+                "departure": "1st July 2017"
+            },
+            {
+                "airline": "AerLingus",
+                "nights": 5,
+                "desc": "Spain’s third-largest city is a magnificent place, content for Madrid and Barcelona to grab the headlines while it gets on with being a wonderfully liveable city with thriving cultural, eating and nightlife scenes. Never afraid to innovate, Valencia diverted its flood-prone river to the outskirts of town and converted the former riverbed into a superb green ribbon of park winding right through the city. ",
+                "hotelName": "Paelia",
+                "images": ["Valencia-min.jpg"],
+                "name": "Valencia",
+                "price": 380,
+                "departure": "1st July 2017"
+            }
+        ],
         "Greece": [{
                 "airline": "AerLingus",
                 "nights": 5,
@@ -156,37 +187,6 @@
                 "images": ["Azores-min.jpg"],
                 "name": "Azores",
                 "price": 1380,
-                "departure": "1st July 2017"
-            }
-        ],
-        "Spain": [{
-                "airline": "Vueling",
-                "nights": 5,
-                "desc": "More than a decade after I fell for Madrid and decided to call it home, the life that courses relentlessly through the streets here still excites me. Here is a place where the passions of Europe’s most passionate country are the fabric of daily life, a city with music in its soul and an unshakeable spring in its step. ",
-                "hotelName": "Prado",
-                "images": ["Madrid-min.jpg"],
-                "name": "Madrid",
-                "price": 580,
-                "departure": "1st July 2017"
-            },
-            {
-                "airline": "Vueling",
-                "nights": 5,
-                "desc": "I love the sea, and taking an early-morning jog along the Mediterranean is my favourite way to start the day. I'm also a bit of a history nerd, and relish strolling the cobblestone lanes of the Gothic quarter, thinking about the people in past centuries who walked these streets. ",
-                "hotelName": "Gothic",
-                "images": ["Barcelona-min.jpg"],
-                "name": "Barcelona",
-                "price": 980,
-                "departure": "1st July 2017"
-            },
-            {
-                "airline": "AerLingus",
-                "nights": 5,
-                "desc": "Spain’s third-largest city is a magnificent place, content for Madrid and Barcelona to grab the headlines while it gets on with being a wonderfully liveable city with thriving cultural, eating and nightlife scenes. Never afraid to innovate, Valencia diverted its flood-prone river to the outskirts of town and converted the former riverbed into a superb green ribbon of park winding right through the city. ",
-                "hotelName": "Paelia",
-                "images": ["Valencia-min.jpg"],
-                "name": "Valencia",
-                "price": 380,
                 "departure": "1st July 2017"
             }
         ]

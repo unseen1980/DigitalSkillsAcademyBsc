@@ -1,6 +1,18 @@
 $(document).ready(function() {
-    $.mobile.loading('show');
-    $('#content').hide();
+    var loader = {
+        show: function() {
+            $.mobile.loading('show');
+            $('#content').hide();
+        },
+        hide: function() {
+            $.mobile.loading('hide');
+            $('#content').show();
+        }
+    };
+    // Add loader widget until json loaded and content created
+    loader.show();
+
+    // Requesting data. Most of logic declaration is happening after successfull response.
     $.getJSON('response.json')
         .done(function(data) {
             var packages = data,
@@ -24,6 +36,17 @@ $(document).ready(function() {
                         slides[i].style.display = "none";
                     }
                     slides[slideIndex - 1].style.display = "block";
+                },
+                sortObject = function(obj) {
+                    return Object.keys(obj).sort().reduce(function(result, key) {
+                        result[key] = obj[key];
+                        return result;
+                    }, {});
+                },
+                sortArray = function(arr) {
+                    return arr.sort(function(a, b) {
+                        return (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1;
+                    });
                 },
                 pageCreation = function(city) {
                     slides += '<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>';
@@ -51,20 +74,41 @@ $(document).ready(function() {
 
             for (var key in packages) {
                 if (packages.hasOwnProperty(key)) {
-                    packagesList.append('<li data-corners="false" id="' + key + '"></li>').listview().listview('refresh');
+                    // Add continents to listview
+                    packagesList
+                        .append('<li data-corners="false" id="' + key + '"></li>')
+                        .listview()
+                        .listview('refresh');
+
+                    // Sort by country
+                    packages[key] = sortObject(packages[key]);
+
                     for (var keyCountry in packages[key]) {
                         if (packages[key].hasOwnProperty(keyCountry)) {
                             $('#' + key).append('<div data-role="collapsible"><h2><img class="flag" src="assets/flags/' + keyCountry + '.png">' + keyCountry +
                                 '</h2><ul  data-role="listview" data-shadow="false" data-inset="true" id="' + keyCountry +
                                 '"></ul></div>').collapsibleset().trigger('create');
+
+                            // Sort cities subcollection    
+                            packages[key][keyCountry] = sortArray(packages[key][keyCountry]);
+
+                            // Create jqm pages and slides
                             packages[key][keyCountry].forEach(pageCreation);
                         }
-                        $('#' + keyCountry).append(slides).listview().listview('refresh');
+                        // Add slides
+                        $('#' + keyCountry)
+                            .append(slides)
+                            .listview()
+                            .listview('refresh');
                         slides = '';
                     }
                 }
             }
+
+            // Add content to DOM
             $('body').append(pageContent);
+
+            // Custom text for autodividers
             packagesList.listview({
                 autodividers: true,
                 autodividersSelector: function(li) {
@@ -72,8 +116,10 @@ $(document).ready(function() {
                 }
             }).listview("refresh");
 
+            // Init slideshow
             showSlides(slideIndex);
 
+            // Slideshow click handlers
             $('.prev').on('click', function() {
                 plusSlides(-1);
                 clearInterval(timer);
@@ -85,8 +131,14 @@ $(document).ready(function() {
                 clearInterval(timer);
                 timer = setInterval(nextSlide, 10000);
             });
-            $.mobile.loading('hide');
-            $('#content').show();
+
+            // Remove loader and show content
+            loader.hide();
+        })
+        .fail(function(err) {
+            // Remove loader and show content
+            loader.hide();
+            $('.content-primary').html('<h2>Connection error. ' + err.responseText + ' Please try again later!</h2>')
         });
 
 });
