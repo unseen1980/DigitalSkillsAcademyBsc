@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $.mobile.loading('show');
+    $('#content').hide();
     $.getJSON('response.json')
         .done(function(data) {
             var packages = data,
@@ -10,32 +12,28 @@ $(document).ready(function() {
                 plusSlides = function(n) {
                     showSlides(slideIndex += n);
                 },
-                currentSlide = function(n) {
-                    showSlides(slideIndex = n);
-                },
                 nextSlide = function() {
                     plusSlides(1);
                 },
                 timer = setInterval(nextSlide, 10000),
                 showSlides = function(n) {
-                    var i;
                     var slides = document.getElementsByClassName("mySlides");
                     if (n > slides.length) { slideIndex = 1 }
                     if (n < 1) { slideIndex = slides.length }
-                    for (i = 0; i < slides.length; i++) {
+                    for (var i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                     }
                     slides[slideIndex - 1].style.display = "block";
                 },
                 pageCreation = function(city) {
                     slides += '<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>';
-                    slideshow.append('<div class="mySlides fade"><a data-transition="slide" href="#' + city.name + '"><img src="' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + 'pp</div>')
+                    slideshow.append('<div class="mySlides"><a data-transition="slide" href="#' + city.name + '"><img src="assets/' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + 'pp</div>')
                     pageContent += '<div data-role="page" id=' + city.name + '>' +
                         '<div data-role="header">' +
                         '<h1>' + city.name + '</h1><a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
                         '</div>' +
                         '<div role="main" class="ui-content">' +
-                        '<img class="center-image" src="' + city.images[0] + '">' +
+                        '<img class="center-image" src="assets/' + city.images[0] + '">' +
                         '<div class="center-image"><ul class="no-bullets">' +
                         '<li><b>Airline</b> - ' + city.airline + '</li>' +
                         '<li><b>Hotel</b> - ' + city.hotelName + '</li>' +
@@ -56,12 +54,13 @@ $(document).ready(function() {
                     packagesList.append('<li data-corners="false" id="' + key + '"></li>').listview().listview('refresh');
                     for (var keyCountry in packages[key]) {
                         if (packages[key].hasOwnProperty(keyCountry)) {
-                            $('#' + key).append('<div data-role="collapsible"><h2 >' + keyCountry +
+                            $('#' + key).append('<div data-role="collapsible"><h2><img class="flag" src="assets/flags/' + keyCountry + '.png">' + keyCountry +
                                 '</h2><ul  data-role="listview" data-shadow="false" data-inset="true" id="' + keyCountry +
                                 '"></ul></div>').collapsibleset().trigger('create');
                             packages[key][keyCountry].forEach(pageCreation);
                         }
                         $('#' + keyCountry).append(slides).listview().listview('refresh');
+                        slides = '';
                     }
                 }
             }
@@ -86,6 +85,8 @@ $(document).ready(function() {
                 clearInterval(timer);
                 timer = setInterval(nextSlide, 10000);
             });
+            $.mobile.loading('hide');
+            $('#content').show();
         });
 
 });

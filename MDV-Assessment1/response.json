@@ -5,7 +5,7 @@
                 "nights": 5,
                 "desc": "Cape Town and the Cape Peninsula up to Cape Point, are famous for scenic beauty; celebrity beaches; Table Mountain; whale-watching; world-class shopping, nightlife, food & wine; and a laid-back atmosphere.",
                 "hotelName": "Safari",
-                "images": ["http://country.southafrica.net/country/cache/ce_img_cache/local/country/uploads/user_uploads/cape-point-banner_700_486_90_s_c1_c_c.jpg"],
+                "images": ["Cape-Town-min.jpg"],
                 "name": "Cape-Town",
                 "price": 1280,
                 "departure": "1st July 2017"
@@ -15,7 +15,7 @@
                 "nights": 7,
                 "desc": "South Africa’s pulsating African heartbeat is felt in the ‘City of Gold’ with its endless opportunities for shopping, entertainment, freedom tours and eating out",
                 "hotelName": "Tsodilo",
-                "images": ["http://africa.com/wp-content/uploads/2015/07/botswana1.jpg"],
+                "images": ["Johannesburg-min.jpg"],
                 "name": "Johannesburg",
                 "price": 3380,
                 "departure": "1st July 2017"
@@ -25,7 +25,7 @@
                 "nights": 5,
                 "desc": "South Africa’s largest and most famous township was a hotbed of anti-apartheid activity. Visit Freedom Struggle sites and eat at a shebeen or township restaurant.",
                 "hotelName": "Blyde",
-                "images": ["http://country.southafrica.net/country/cache/ce_img_cache/local/country/uploads/user_uploads/BikeToursSoweto_960_472_80auto_s_c1_center_top_700_486_90_s_c1_c_c.jpg"],
+                "images": ["Soweto-min.jpg"],
                 "name": "Soweto",
                 "price": 580,
                 "departure": "1st July 2017"
@@ -38,7 +38,7 @@
                 "nights": 5,
                 "desc": "Beijing, China's capital city for over 700 years, is rich in history, both ancient and modern. There are many palace complexes in Beijing, as well as super-modern buildings.",
                 "hotelName": "The great wall",
-                "images": ["http://images.chinahighlights.com/allpicture/2016/03/673584c949594c9b8fa37f95.jpg"],
+                "images": ["Beijing-min.jpg"],
                 "name": "Beijing",
                 "price": 2180,
                 "departure": "1st July 2017"
@@ -48,7 +48,7 @@
                 "nights": 5,
                 "desc": "China's biggest city, oozes an atmosphere of vitality which can rival New York and Paris in terms of modernity. As one of the world's leading economic and business cities, Shanghai's modernity is evidenced by the ambitious skyline.",
                 "hotelName": "Yu Garden",
-                "images": ["http://images.chinahighlights.com/allpicture/2016/03/34e454d9eb11494e9662a36c.jpg"],
+                "images": ["Shanghai-min.jpg"],
                 "name": "Shanghai",
                 "price": 3180,
                 "departure": "1st July 2017"
@@ -59,7 +59,7 @@
             "nights": 5,
             "desc": "If there’s one Indian city that can be called the Grand Dame, it’s Kolkata. Visit the Victoria Memorial, the imposing St. Paul’s Cathedral and the Greco-Romanesque Writers’ Building for a peek into Kolkata’s past. The former French colony of Chandan Nagar (30 kilometres away) has several beautiful buildings, monuments and the riverside Strand. Nobel Laureate Tagore’s Shantiniketan is 180 kilometres away and makes an interesting day trip for history buffs.",
             "hotelName": "Nagar",
-            "images": ["https://www.makemytrip.com/blog/sites/default/files/uploads/Kolkata-St-Cathedral.jpg"],
+            "images": ["Kolkata-min.jpg"],
             "name": "Kolkata",
             "price": 440,
             "departure": "1st July 2017"
@@ -71,7 +71,7 @@
                 "nights": 5,
                 "desc": "It's no wonder that all roads lead to the fascinating and maddening metropolis of Athens. Lift your eyes 200 feet above the city to the Parthenon, its honey-colored marble columns rising from a massive limestone base, and you’ll behold architectural perfection that has not been surpassed in 2,500 years. Today, this shrine of classical form dominates a 21st-century boomtown.",
                 "hotelName": "Acropolis",
-                "images": ["http://assets.fodors.com/destinations/14/the-parthenon-the-acropolis-athens-greece_main.jpg"],
+                "images": ["Athens-min.jpg"],
                 "name": "Athens",
                 "price": 380,
                 "departure": "1st July 2017"
@@ -81,7 +81,7 @@
                 "nights": 5,
                 "desc": "Santorini is the supermodel of the Greek islands, a head-turner whose face is instantly recognisable around the world: multicoloured cliffs soar out of a sea-drowned caldera, topped by drifts of whitewashed buildings. With its reputation for dazzling panoramas, romantic sunsets and volcanic-sand beaches, it’s hardly surprising the island features on so many travellers’ bucket lists.",
                 "hotelName": "Caldera",
-                "images": ["https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2016/02/Santorini-sunset_CS.jpg"],
+                "images": ["Santorini-min.jpg"],
                 "name": "Santorini",
                 "price": 3180,
                 "departure": "1st July 2017"
@@ -91,7 +91,7 @@
                 "nights": 5,
                 "desc": "Once called ancient Iolkos, Volos was the mythic home of Jason and his band of Argonauts. These days, Volos is a large and bustling university city on the northern shores of the Pagasitikos Gulf, and its function as the gateway to the Pelion Peninsula or the Sporades draws travellers to the city.",
                 "hotelName": "Jason",
-                "images": ["http://staffmobility.eu/sites/default/files/volos-1021x580.jpg"],
+                "images": ["Volos-min.jpg"],
                 "name": "Volos",
                 "price": 380,
                 "departure": "1st July 2017"
@@ -102,7 +102,7 @@
                 "nights": 5,
                 "desc": "I'm a walker and I love exploring Rome on foot, losing myself in the tangled lanes of the historic centre and neighbourhoods like Trastevere and Monti. I love the aroma of freshly ground coffee that comes out of the cafes and sharing a carafe of local wine over lunch in a trattoria. ",
                 "hotelName": "Mozzarela",
-                "images": ["https://lonelyplanetimages.imgix.net/mastheads/stock-photo-roman-sunset-77415821.jpg?sharp=10&vib=20&w=1200"],
+                "images": ["Rome-min.jpg"],
                 "name": "Rome",
                 "price": 380,
                 "departure": "1st July 2017"
@@ -112,7 +112,7 @@
                 "nights": 5,
                 "desc": "From cutting-edge design showcases to hi-tech olive presses and a sidewalk scene that makes Fashion Week seem entirely redundant, Milan is both thrilling and fun. Everyone here is fizzing with ideas, ambition and energy, and it’s catching.",
                 "hotelName": "PizzaPie",
-                "images": ["http://www.ilikegoingout.com/images/milan-italy-12.jpg?crc=3935895513"],
+                "images": ["Milan-min.jpg"],
                 "name": "Milan",
                 "price": 680,
                 "departure": "1st July 2017"
@@ -122,7 +122,7 @@
                 "nights": 5,
                 "desc": "Italy's third-largest city is one of its oldest, most artistic and most delicious. Naples' centro storico (historic centre) is a Unesco World Heritage Site, its archaeological treasures are among the world's most impressive, and its swag of vainglorious palaces, castles and churches make Rome look positively provincial.",
                 "hotelName": "MammaMia",
-                "images": ["http://kingofwallpapers.com/napoli/napoli-014.jpg"],
+                "images": ["Naples-min.jpg"],
                 "name": "Naples",
                 "price": 380,
                 "departure": "1st July 2017"
@@ -133,7 +133,7 @@
                 "nights": 5,
                 "desc": "I first met Lisbon through a pair of its most famous eyes – those of fado superstar Mariza, who showed me around the city over three days in 2005. Her contagious enthusiasm quickly taught me that 'destination unknown' was the best way to unravel Lisbon.",
                 "hotelName": "Rio Tejo",
-                "images": ["http://cdni.condenast.co.uk/1080x720/a_c/bica-cable-car-bairro-alto-lisbon-portugal-conde-nast-traveller-18dec15-getty_1080x720.jpg"],
+                "images": ["Lisbon-min.jpg"],
                 "name": "Lisbon",
                 "price": 980,
                 "departure": "1st July 2017"
@@ -143,7 +143,7 @@
                 "nights": 5,
                 "desc": "he Algarve’s capital has a more distinctly Portuguese feel than most resort towns. Many visitors only pass through this underrated city, which is a pity, as it makes for an enjoyable stopover. It has an attractive marina, well-maintained parks and plazas, and a historic old town full of pedestrian lanes and outdoor cafes.",
                 "hotelName": "Se",
-                "images": ["http://www.driftwoodjournals.com/wp-content/uploads/2016/03/Faro-Portugal-3-1024x684.jpg"],
+                "images": ["Faro-min.jpg"],
                 "name": "Faro",
                 "price": 280,
                 "departure": "1st July 2017"
@@ -153,7 +153,7 @@
                 "nights": 5,
                 "desc": "Atlantic fronts barrel in, clouds tussle, shafts of sunbeams and great fat silvery pools of light chase over swelling seas to fields of infinite greens. For the Azores you pack a cagoule and sunglasses, your swimming gear and walking shoes, for you’re never more than a few minutes from a dramatic basalt seashore or an alluring grassy pathway.",
                 "hotelName": "Corvo",
-                "images": ["http://www.visitazores.com/sites/all/themes/azzorre/assets/frontshow/images/pico-c-velha.jpg"],
+                "images": ["Azores-min.jpg"],
                 "name": "Azores",
                 "price": 1380,
                 "departure": "1st July 2017"
@@ -164,7 +164,7 @@
                 "nights": 5,
                 "desc": "More than a decade after I fell for Madrid and decided to call it home, the life that courses relentlessly through the streets here still excites me. Here is a place where the passions of Europe’s most passionate country are the fabric of daily life, a city with music in its soul and an unshakeable spring in its step. ",
                 "hotelName": "Prado",
-                "images": ["http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Spain/Madrid/madrid-overview-sunsetovermadrid-xlarge.jpg"],
+                "images": ["Madrid-min.jpg"],
                 "name": "Madrid",
                 "price": 580,
                 "departure": "1st July 2017"
@@ -174,7 +174,7 @@
                 "nights": 5,
                 "desc": "I love the sea, and taking an early-morning jog along the Mediterranean is my favourite way to start the day. I'm also a bit of a history nerd, and relish strolling the cobblestone lanes of the Gothic quarter, thinking about the people in past centuries who walked these streets. ",
                 "hotelName": "Gothic",
-                "images": ["http://cosinfo.gatech.edu/images/park.jpg"],
+                "images": ["Barcelona-min.jpg"],
                 "name": "Barcelona",
                 "price": 980,
                 "departure": "1st July 2017"
@@ -184,7 +184,7 @@
                 "nights": 5,
                 "desc": "Spain’s third-largest city is a magnificent place, content for Madrid and Barcelona to grab the headlines while it gets on with being a wonderfully liveable city with thriving cultural, eating and nightlife scenes. Never afraid to innovate, Valencia diverted its flood-prone river to the outskirts of town and converted the former riverbed into a superb green ribbon of park winding right through the city. ",
                 "hotelName": "Paelia",
-                "images": ["https://cdn-goeuro.com/static_content/web/content/destination/Valencia-deluxe1.jpg"],
+                "images": ["Valencia-min.jpg"],
                 "name": "Valencia",
                 "price": 380,
                 "departure": "1st July 2017"
@@ -197,7 +197,7 @@
                 "nights": 5,
                 "desc": "Dear sweet Hollywood, the nexus of the global entertainment industry, has some backstory. First, there was the Golden Age, the dawn of the movie industry, when industry strongmen ruled and owned it all. Its very name synonymous with the entire movie industry. ",
                 "hotelName": "Hilton",
-                "images": ["http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/04/19/103561595-GettyImages-454041801.1910x1000.jpg"],
+                "images": ["Hollywood-min.jpg"],
                 "name": "Hollywood",
                 "price": 3980,
                 "departure": "1st July 2017"
@@ -207,7 +207,7 @@
                 "nights": 5,
                 "desc": "LA runs deeper than her blonde beaches, rolling hills and bumper-to-bumper traffic would have you believe. She’s a myth. A beacon for countless small-town dreamers, rockers and risk-takers, an open-minded angel who encourages her people to live and let live without judgement or shame. She has given us Quentin Tarantino, Jim Morrison and Serena and Venus Williams; ",
                 "hotelName": "HolidayInn",
-                "images": ["http://assets.lapdonline.org/assets/jpg/los-angeles-by-josh-harris-large.jpg"],
+                "images": ["Los-Angeles-min.jpg"],
                 "name": "Los-Angeles",
                 "price": 4380,
                 "departure": "1st July 2017"
@@ -217,7 +217,7 @@
                 "nights": 5,
                 "desc": "Though culturally diverse and historic, San Jose has always been in San Francisco’s shadow, awash in Silicon Valley’s suburbia. Founded in 1777 as El Pueblo de San José de Guadalupe, San Jose is California’s oldest Spanish civilian settlement. Its downtown is small and scarcely used for a city of its size, though it does bustle with 20-something clubgoers on the weekends.",
                 "hotelName": "Pueblo ",
-                "images": ["http://www.terragalleria.com/images/us-ca/usca80078.jpeg"],
+                "images": ["San-Jose-min.jpg"],
                 "name": "San-Jose",
                 "price": 1380,
                 "departure": "1st July 2017"
