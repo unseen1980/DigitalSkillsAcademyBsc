@@ -29,7 +29,7 @@ Submission tag: Christos_Koutsiaris_BScHn16B_MDV_A1__STU-00001219
 
 #### Other
 
-1.Storing data in localstorage for offline capability (Phonegap scenario)
+1. Storing data in localstorage for offline capability (Phonegap scenario)
 
 #### Javascript libraries
 
