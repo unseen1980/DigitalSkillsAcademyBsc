@@ -63,13 +63,13 @@ $(document).ready(function() {
                         // If backend is offline we dont let the user to go to booking page
                         var bookingBtn = mode === 'online' ? '<a data-transition="slide" href="#booking" class="ui-btn">Book</a>' : '<a href="#" class="ui-btn">Sorry booking not available at the moment.</a>';
                         slides += '<li><a data-transition="slide" href="#' + city.name + '">' + city.name + '</a></li>';
-                        slideshow.append('<div class="mySlides"><a data-transition="slide" href="#' + city.name + '"><img src="assets/' + city.images[0] + '" style="width:100%"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + '€pp</div>');
+                        slideshow.append('<div class="mySlides"><a data-transition="slide" href="#' + city.name + '"><img src="assets/' + city.images[0] + '" style="width:100%" alt="' + city.name + '"></a><div class="text">Travel to ' + city.name + ' from only ' + city.price + '€pp</div>');
                         pageContent += '<div data-role="page" id=' + city.name + '>' +
                             '<div data-role="header">' +
                             '<h1>' + city.name + '</h1><a href="#" data-transition="slide" data-direction="reverse" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>' +
                             '</div>' +
                             '<div role="main" class="ui-content">' +
-                            '<img class="center-image" src="assets/' + city.images[0] + '">' +
+                            '<img class="center-image" alt="' + city.name + '" src="assets/' + city.images[0] + '">' +
                             '<div class="center-image"><ul class="no-bullets">' +
                             '<li><b>Airline</b> - ' + city.airline + '</li>' +
                             '<li><b>Hotel</b> - ' + city.hotelName + '</li>' +
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
                         for (var keyCountry in packages[key]) {
                             if (packages[key].hasOwnProperty(keyCountry)) {
-                                $('#' + key).append('<div data-role="collapsible"><h2><img class="flag" src="assets/flags/' + keyCountry + '.png">' + keyCountry +
+                                $('#' + key).append('<div data-role="collapsible"><h2><img alt="' + keyCountry + '"class="flag" src="assets/flags/' + keyCountry + '.png">' + keyCountry +
                                     '</h2><ul  data-role="listview" data-shadow="false" data-inset="true" id="' + keyCountry +
                                     '"></ul></div>').collapsibleset().trigger('create');
 
