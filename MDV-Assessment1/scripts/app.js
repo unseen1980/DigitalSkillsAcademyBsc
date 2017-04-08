@@ -149,8 +149,9 @@ $(document).ready(function() {
             }
         };
 
-        // Backend not available to serve content
+        // If backend not available to serve content
         if (data.status === 404) {
+            // Retrieve content from localstorage
             var offlineData = JSON.parse(localStorage.getItem('packages'));
             loader.hide();
             //No copy of data available in localstorage. Sorry!
@@ -161,7 +162,7 @@ $(document).ready(function() {
                 init(offlineData, 'offline');
             }
         }
-        // Backend serving data like a boss
+        // Backend online and serving data like a boss
         else {
             init(data, 'online');
         }
