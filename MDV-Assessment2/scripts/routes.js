@@ -2,7 +2,7 @@ angular.module('todoApp.routes', ['ngRoute', 'ui.bootstrap', 'todoApp.controller
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: '/scripts/templates/main.html',
+                templateUrl: '/scripts/templates/new-todo.html',
                 controller: 'todoCtrl'
             })
             .when('/todo/:id', {

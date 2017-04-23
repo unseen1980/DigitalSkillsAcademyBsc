@@ -61,13 +61,28 @@ angular.module('todoApp')
                 return deferred.promise;
             },
 
-            put: function(todo, index) {
+            updateTodo: function(updated) {
                 var deferred = $q.defer();
 
-                store.todos[index] = todo;
+                store.todos.forEach(function(todo, idx) {
+                    if (updated.id === todo.id) {
+                        store.todos[idx] = updated;
+                    }
+                });
 
                 store._saveToLocalStorage(store.todos);
                 deferred.resolve(store.todos);
+
+                return deferred.promise;
+            },
+
+            getTodo: function(id) {
+                var deferred = $q.defer();
+                var todo = store._getFromLocalStorage().filter(function(todo) {
+                    return todo.id === id
+                })[0];
+
+                deferred.resolve(todo);
 
                 return deferred.promise;
             }
