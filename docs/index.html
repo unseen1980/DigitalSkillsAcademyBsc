@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    * Author: Christos Koutsiaris
+
+    * Assessment 2 -  AngularJS Todo list
+
+    * Student ID: STU-00001219
+
+    * Date: 
+
+    * Code: BScHn16B_MDV_A2
+-->
+
+<head>
+    <title>My Todo list</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="todoApp">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">My todo list</a>
+            </div>
+        </div>
+    </nav>
+    <div ng-view></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/controllers/new-todo.controller.js"></script>
+    <script src="scripts/controllers/edit-todo.controller.js"></script>
+    <script src="scripts/directives/todo-form.directive.js"></script>
+    <script src="scripts/directives/todo-list.directive.js"></script>
+    <script src="scripts/services/storage.js"></script>
+    <script src="scripts/filters/truncate.filter.js"></script>
+</body>
+
+</html>

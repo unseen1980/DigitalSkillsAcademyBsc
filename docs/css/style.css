@@ -1,0 +1,36 @@
+/** 
+* Author: Christos Koutsiaris
+
+* Assessment 1 -  Mobile jQuery
+
+* Student ID: STU-00001219
+
+* Date: 2017/04/08
+
+*  Code: BScHn16B_MDV_A1
+
+*/
+
+.no-box-shadow {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.set-inline {
+    display: inline;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px #2196F3;
+}
