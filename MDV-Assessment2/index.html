@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body ng-app="todoApp">
+<body ng-app="todoApp" ng-controller="todoCtrl">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -31,91 +31,50 @@
         </div>
     </nav>
     <div class="container jumbotron">
-        <form class="form-horizontal">
+        <form class="form-horizontal" novalidate>
             <div class="form-group">
                 <label for="inputTitle" class="col-sm-2 control-label">Title</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputTitle" placeholder="Add a title">
+                    <input type="text" class="form-control" id="inputTitle" ng-model="todo.title" placeholder="Add a title">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputDesc" class="col-sm-2 control-label">Description</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputDesc" placeholder="Add description">
+                    <input type="text" class="form-control" ng-model="todo.description" id="inputDesc" placeholder="Add description">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputDate" class="col-sm-2 control-label">Complete on</label>
                 <div class="col-sm-3">
                     <p class="input-group">
-                        <input type="text" class="form-control" id="inputDate" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                        <input type="text" class="form-control" id="inputDate" uib-datepicker-popup="dd-MMMM-yyyy" ng-model="todo.date" is-open="calendar.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-default no-box-shadow" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                            <button type="button" class="btn btn-default no-box-shadow" 
+                            ng-click="openCalendar()"><i class="glyphicon glyphicon-calendar"></i></button>
                         </span>
                     </p>
                 </div>
                 <label for="select" class="col-sm-2 control-label">Priority</label>
-                <div class="col-sm-3"><select class="form-control" id="select">
-                        <option label=" "></option>
-                        <option>High</option>
-                        <option>Medium</option>
-                        <option>Low</option>
+                <div class="col-sm-3">
+                    <select class="form-control" id="select" ng-model="todo.priority">
+                        <option ng-repeat="priority in priorityOptions track by $index" value="{{::priority.value}}" ng-bind="::priority.type">
+                        </option>
                     </select>
                 </div>
                 <div class="col-sm-2">
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" ng-click="addTodo(todo)" class="btn btn-primary">Add</button>
                 </div>
             </div>
         </form>
     </div>
     <div class="container">
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
+        <div class="col-sm-3" ng-repeat="todo in todos track by $index">
+            <div class="panel panel-{{::panelHeaderColor[todo.priority]}}">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Panel primary</h3>
+                    <h3 class="panel-title" ng-bind="::todo.title | truncate: 15"></h3>
                 </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel primary</h3>
-                </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-danger">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel primary</h3>
-                </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-warning">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel primary</h3>
-                </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel primary</h3>
-                </div>
-                <div class="panel-body">
-                    Panel content
+                <div class="panel-body" ng-bind="::todo.description | truncate: 60">
                 </div>
             </div>
         </div>
@@ -123,6 +82,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/todo.controller.js"></script>
+    <script src="scripts/services/storage.js"></script>
+    <script src="scripts/filters/truncate.filter.js"></script>
 </body>
 
 </html>
