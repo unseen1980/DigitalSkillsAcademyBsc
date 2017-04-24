@@ -7,24 +7,25 @@ angular.module('todoApp')
         var store = {
             todos: [],
 
-            _getFromLocalStorage: function() {
+            getFromLocalStorage: function() {
                 return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
             },
 
-            _saveToLocalStorage: function(todos) {
+            saveToLocalStorage: function(todos) {
                 localStorage.setItem(STORAGE_ID, JSON.stringify(todos));
             },
 
-            clearCompleted: function() {
+            deleteCompleted: function() {
                 var deferred = $q.defer();
 
                 var incompleteTodos = store.todos.filter(function(todo) {
-                    return !todo.completed;
+                    // Completed status is 3
+                    return parseInt(todo.status) !== 3;
                 });
 
                 angular.copy(incompleteTodos, store.todos);
 
-                store._saveToLocalStorage(store.todos);
+                store.saveToLocalStorage(store.todos);
                 deferred.resolve(store.todos);
 
                 return deferred.promise;
@@ -35,7 +36,18 @@ angular.module('todoApp')
 
                 store.todos.splice(store.todos.indexOf(todo), 1);
 
-                store._saveToLocalStorage(store.todos);
+                store.saveToLocalStorage(store.todos);
+                deferred.resolve(store.todos);
+
+                return deferred.promise;
+            },
+
+            deleteAll: function() {
+                var deferred = $q.defer();
+
+                store.todos = [];
+
+                store.saveToLocalStorage(store.todos);
                 deferred.resolve(store.todos);
 
                 return deferred.promise;
@@ -44,7 +56,7 @@ angular.module('todoApp')
             get: function() {
                 var deferred = $q.defer();
 
-                angular.copy(store._getFromLocalStorage(), store.todos);
+                angular.copy(store.getFromLocalStorage(), store.todos);
                 deferred.resolve(store.todos);
 
                 return deferred.promise;
@@ -55,7 +67,7 @@ angular.module('todoApp')
 
                 store.todos.push(todo);
 
-                store._saveToLocalStorage(store.todos);
+                store.saveToLocalStorage(store.todos);
                 deferred.resolve(store.todos);
 
                 return deferred.promise;
@@ -70,7 +82,7 @@ angular.module('todoApp')
                     }
                 });
 
-                store._saveToLocalStorage(store.todos);
+                store.saveToLocalStorage(store.todos);
                 deferred.resolve(store.todos);
 
                 return deferred.promise;
@@ -78,7 +90,7 @@ angular.module('todoApp')
 
             getTodo: function(id) {
                 var deferred = $q.defer();
-                var todo = store._getFromLocalStorage().filter(function(todo) {
+                var todo = store.getFromLocalStorage().filter(function(todo) {
                     return todo.id === id
                 })[0];
 

@@ -5,6 +5,10 @@ angular.module('todoApp.routes', ['ngRoute', 'ui.bootstrap', 'todoApp.controller
                 templateUrl: 'scripts/templates/new-todo.html',
                 controller: 'todoCtrl'
             })
+            .when('/settings', {
+                templateUrl: 'scripts/templates/settings.html',
+                controller: 'todoCtrl'
+            })
             .when('/todo/:id', {
                 templateUrl: 'scripts/templates/edit-todo.html',
                 controller: 'editTodoCtrl'

@@ -21,6 +21,11 @@ angular.module('todoApp')
                     { type: 'Low', value: 2 },
                     { type: 'Very Low', value: 1 }
                 ];
+                $scope.statusOptions = [
+                    { type: 'Open', value: 1, glyph: 'glyphicon-play-circle' },
+                    { type: 'In progress', value: 2, glyph: 'glyphicon-time' },
+                    { type: 'Completed', value: 3, glyph: 'glyphicon-ok' }
+                ];
 
                 $scope.dateOptions = {
                     formatYear: 'yy',

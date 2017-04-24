@@ -7,7 +7,10 @@
             </a>
         </div>
         <div class="panel-body">
-            <div ng-bind="::todo.date | date:'dd/MM/yyyy'"></div>
+            <div ng-cloak="">
+                <span class="todo-date" ng-bind="::todo.date | date:'dd/MM/yyyy'"></span>
+                <span class="glyphicon {{statusOptionsGlyphs[todo.status]}} todo-glyph" aria-hidden="true"></span>
+            </div>
             <div ng-bind="::todo.description | truncate: 40"></div>
         </div>
     </div>
