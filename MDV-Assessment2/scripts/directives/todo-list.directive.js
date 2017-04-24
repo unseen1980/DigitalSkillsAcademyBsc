@@ -14,6 +14,11 @@ angular.module('todoApp')
                     2: 'primary',
                     1: 'success'
                 };
+                $scope.statusOptionsGlyphs = {
+                    1: 'glyphicon-play-circle',
+                    2: 'glyphicon-time',
+                    3: 'glyphicon-ok'
+                };
             }
         };
     });
