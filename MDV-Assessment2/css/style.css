@@ -52,6 +52,56 @@ a:hover {
 }
 
 .jumbotron {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.jumbotron-settings {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.big-button {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.form-control {
+    height: 32px
+}
+
+.calendar-icon {
+    padding: 2px 8px;
+}
+
+.icon-bar {
+    background-color: #b2dbfb !important;
+}
+
+.plus-button {
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 0 19px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.logo {
+    width: 55%;
+}
+
+.img-logo {
+    width: 15%;
+    display: inline !important;
+    margin-right: 10px;
 }

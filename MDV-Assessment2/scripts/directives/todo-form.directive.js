@@ -4,7 +4,9 @@ angular.module('todoApp')
             restrict: 'E',
             scope: {
                 todo: '=?',
-                mode: '@'
+                mode: '@',
+                collapsed: '=',
+                showX: '='
             },
             templateUrl: 'scripts/directives/todo-form.template.html',
             controller: function($scope, storage, $routeParams, $location) {
@@ -47,6 +49,7 @@ angular.module('todoApp')
                         $scope.todos = res;
                     });
                     $scope.todo = {};
+                    $scope.collapsed = !$scope.collapsed
                 };
 
                 $scope.updateTodo = function(todo) {
