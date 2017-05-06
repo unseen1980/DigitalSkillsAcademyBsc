@@ -1,20 +1,140 @@
-.no-box-shadow{box-shadow:0px 0px 2px rgba(0, 0, 0, 0.4);}
-.set-inline{display:inline;}
-.font-weight-normal{font-weight:400;}
-a:link{color:#fff;}
-a:visited{color:#fff;}
-a:hover{text-shadow:1px 1px 2px #2196F3;}
-.todo-date{display:inline-block;vertical-align:top;font-size:14px;}
-.todo-glyph{display:inline-block;vertical-align:text-top;font-size:16px;}
-.form-horizontal .control-label{text-align:left;}
-.jumbotron{padding-top:30px;padding-bottom:10px;}
-.jumbotron-settings{padding-top:10px;padding-bottom:10px;}
-.big-button{width:100%;margin:15px 0;}
-.form-control{height:32px}
-.calendar-icon{padding:4px 8px;}
-.icon-bar{background-color:#b2dbfb !important;}
-.plus-button{border-radius:30px;font-size:30px;padding:0 19px;position:fixed;bottom:4%;right:4%;z-index:1;}
-.cursor-pointer{cursor:pointer;}
-.text-right{text-align:right;}
-.logo{width:200px;display:inline-flex;}
-.img-logo{width:35px;margin-right:10px;}
+/*Author: Christos Koutsiaris
+Assessment 2 - BScH Mobile Development, Digital Skills Academy
+Student ID: STU-00001219
+Date: 2017/05/08
+Code: BScHn16B_MDV_A2*/
+
+.no-box-shadow {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.set-inline {
+    display: inline;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px #2196F3;
+}
+
+.todo-date {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.todo-glyph {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 16px;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.jumbotron-settings {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.big-button {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.form-control {
+    height: 32px
+}
+
+.calendar-icon {
+    padding: 4px 8px;
+}
+
+.icon-bar {
+    background-color: #b2dbfb !important;
+}
+
+.plus-button {
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 0 19px;
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    z-index: 1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.logo {
+    width: 200px;
+    display: inline-flex;
+}
+
+.img-logo {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+
+/*Route animations*/
+
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.ng-enter {
+    z-index: 8888;
+}
+
+.ng-leave {
+    z-index: 9999;
+}
+
+.animate-page.ng-enter {
+    -webkit-animation: slideInRight 0.4s ease-in-out both;
+    animation: slideInRight 0.4s both ease-in-out both;
+}
+
+.animate-page.ng-leave {
+    -webkit-animation: slideOutLeft 0.4s ease-in-out both;
+    animation: slideOutLeft 0.4s ease-in-out both;
+}
