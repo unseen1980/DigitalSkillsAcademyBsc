@@ -1,5 +1,4 @@
-CREATE DATABASE 
-	countriesDB;
+CREATE DATABASE countriesDB;
 USE countriesDB;
 CREATE TABLE countries (
     code VARCHAR(2) NOT NULL PRIMARY KEY,
