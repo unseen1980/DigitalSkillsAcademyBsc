@@ -253,4 +253,3 @@ INSERT INTO countries VALUES ('YT','Mayotte','AF','http://en.wikipedia.org/wiki/
 INSERT INTO countries VALUES ('ZA','South Africa','AF','http://en.wikipedia.org/wiki/South_Africa');
 INSERT INTO countries VALUES ('ZM','Zambia','AF','http://en.wikipedia.org/wiki/Zambia');
 INSERT INTO countries VALUES ('ZW','Zimbabwe','AF','http://en.wikipedia.org/wiki/Zimbabwe');
-INSERT INTO countries VALUES ('ZZ','Unknown or unassigned country','AF','http://en.wikipedia.org/wiki/Unknown_or_unassigned_country');
