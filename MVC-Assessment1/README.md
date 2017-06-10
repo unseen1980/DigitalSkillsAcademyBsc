@@ -21,6 +21,17 @@ Submission tag: Christos_Koutsiaris_BScHn16B_MVC_A1__STU-00001219
 3. /index.php/api/getCountryDataByName/countryname Eg. /index.php/api/getCountryDataByName/Greece
 4. /index.php/api/getCountriesDataByContinent/continent Eg. /index.php/api/getCountriesDataByContinent/EU
 
+#### New files
+
+1. codeigniter/application/controllers/api.php
+2. codeigniter/application/models/countries_model.php
+
+#### Files with changes
+
+1. codeigniter/application/config/database.php
+2. codeigniter/application/config/routes.php
+3. codeigniter/application/config/autoload.php
+
 #### Repository
 
 1. [Github](https://github.com/unseen1980/DigitalSkillsAcademyBsc/tree/master/MVC-Assessment1)

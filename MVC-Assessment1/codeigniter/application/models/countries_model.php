@@ -1,3 +1,10 @@
+<!--
+Author: Christos Koutsiaris
+Assessment 1 -  Code Igniter MVC Web service 
+Student ID: STU-00001219
+Date: 2017/06/11
+Code: BScHn16B_MVC_A1
+-->
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 class Countries_model extends CI_Model
