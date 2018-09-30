@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/unseen1980/DigitalSkillsAcademyBsc#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.1.2",
     "jquery": "^3.1.1"
   }
 }
